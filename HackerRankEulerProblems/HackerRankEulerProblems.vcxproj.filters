@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\20">
+      <UniqueIdentifier>{77e59e19-34d3-4c6a-bfa6-51c86c735884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\40">
+      <UniqueIdentifier>{7b3bf4f5-a208-4584-b749-ebdb49b4365b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\60">
+      <UniqueIdentifier>{65948a14-632a-4c12-a7b0-fa642296b579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\80">
+      <UniqueIdentifier>{8ad34e76-252e-490e-a20e-9b74aaabdce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\20">
+      <UniqueIdentifier>{c12393c1-455b-45cc-bd8d-48f9010f2aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\40">
+      <UniqueIdentifier>{a0267731-632c-408f-9a02-398f1f9b2202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\60">
+      <UniqueIdentifier>{48cbcbb5-3324-4190-8472-2b1272bb3093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\80">
+      <UniqueIdentifier>{21759db7-7aa5-46a9-aefa-885a904c3cbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\libs">
+      <UniqueIdentifier>{ac076f7c-c38d-471b-b51a-ba88ad57bac0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="20\P001_MultiplesOf3And5.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P002_SumOfEvenFibonacciNumbers.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="80\P068_MagicNGonRing.cpp">
+      <Filter>Source Files\80</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P003_LargestPrimeFactor.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="HackerRankEulerProblems.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P004_LargestPalindromeProduct.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P005_SmallestMultiple.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P006_SumSquareDifference.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P007_10001stPrime.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P008_LargestProductInASeries.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P009_SpecialPythagoreanTriplet.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P010_SummationOfPrimes.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="20\P001_MultiplesOf3And5.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P002_SumOfEvenFibonacciNumbers.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="80\P068_MagicNGonRing.h">
+      <Filter>Header Files\80</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\timer.h">
+      <Filter>Header Files\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P003_LargestPrimeFactor.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P004_LargestPalindromeProduct.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P005_SmallestMultiple.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\numeric.h">
+      <Filter>Header Files\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P006_SumSquareDifference.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P007_10001stPrime.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\prime.h">
+      <Filter>Header Files\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P008_LargestProductInASeries.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P009_SpecialPythagoreanTriplet.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P010_SummationOfPrimes.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
