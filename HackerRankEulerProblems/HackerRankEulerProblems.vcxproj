@@ -157,6 +157,7 @@
     <ClCompile Include="20\P008_LargestProductInASeries.cpp" />
     <ClCompile Include="20\P009_SpecialPythagoreanTriplet.cpp" />
     <ClCompile Include="20\P010_SummationOfPrimes.cpp" />
+    <ClCompile Include="20\P011_LargestProductInAGrid.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
   </ItemGroup>
@@ -171,6 +172,7 @@
     <ClInclude Include="20\P008_LargestProductInASeries.h" />
     <ClInclude Include="20\P009_SpecialPythagoreanTriplet.h" />
     <ClInclude Include="20\P010_SummationOfPrimes.h" />
+    <ClInclude Include="20\P011_LargestProductInAGrid.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\numeric.h" />
     <ClInclude Include="libs\prime.h" />
