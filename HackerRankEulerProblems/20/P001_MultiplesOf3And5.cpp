@@ -18,6 +18,7 @@ uint64_t P001MultiplesOf3And5::Solve(uint32_t n)
 
 void P001MultiplesOf3And5::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

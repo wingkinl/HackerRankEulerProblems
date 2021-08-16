@@ -13,6 +13,7 @@ int P00710001stPrime::Solve(int n)
 
 void P00710001stPrime::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	PrimeNumbers<int> primes;

@@ -20,6 +20,7 @@ int P009SpecialPythagoreanTriplet::Solve(int n)
 
 void P009SpecialPythagoreanTriplet::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

@@ -14,6 +14,7 @@ int P005SmallestMultiple::Solve(int n)
 
 void P005SmallestMultiple::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

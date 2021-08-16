@@ -28,6 +28,7 @@ uint64_t P003LargestPrimeFactor::Solve(uint64_t n)
 
 void P003LargestPrimeFactor::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

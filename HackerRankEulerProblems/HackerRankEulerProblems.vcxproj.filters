@@ -84,6 +84,12 @@
     <ClCompile Include="20\P012_HighlyDivisibleTriangularNumber.cpp">
       <Filter>Source Files\20</Filter>
     </ClCompile>
+    <ClCompile Include="20\P013_LargeSum.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="20\P014_LongestCollatzSequence.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -132,6 +138,12 @@
       <Filter>Header Files\20</Filter>
     </ClInclude>
     <ClInclude Include="20\P012_HighlyDivisibleTriangularNumber.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P013_LargeSum.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P014_LongestCollatzSequence.h">
       <Filter>Header Files\20</Filter>
     </ClInclude>
   </ItemGroup>

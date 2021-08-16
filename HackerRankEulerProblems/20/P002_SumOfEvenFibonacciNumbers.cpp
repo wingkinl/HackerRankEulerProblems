@@ -19,6 +19,7 @@ uint64_t P002SumOfEvenFibonacciNumbers::Solve(uint32_t n)
 
 void P002SumOfEvenFibonacciNumbers::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

@@ -22,6 +22,7 @@ int P008LargestProductInASeries::Solve(const std::string& str, int consecutive)
 
 void P008LargestProductInASeries::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int tt;
 	std::cin >> tt;
 

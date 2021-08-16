@@ -14,6 +14,7 @@ long P006SumSquareDifference::Solve(long n)
 
 void P006SumSquareDifference::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	for (int ii = 0; ii < t; ii++)

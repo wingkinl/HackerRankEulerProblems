@@ -48,6 +48,7 @@ long P010SummationOfPrimes::Solve(long n)
 
 void P010SummationOfPrimes::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
 	PrimeNumbersSum primes;

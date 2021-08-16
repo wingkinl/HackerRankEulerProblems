@@ -12,6 +12,8 @@
 #include "../HackerRankEulerProblems/20/P010_SummationOfPrimes.h"
 #include "../HackerRankEulerProblems/20/P011_LargestProductInAGrid.h"
 #include "../HackerRankEulerProblems/20/P012_HighlyDivisibleTriangularNumber.h"
+#include "../HackerRankEulerProblems/20/P013_LargeSum.h"
+#include "../HackerRankEulerProblems/20/P014_LongestCollatzSequence.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -162,6 +164,35 @@ namespace UnitTestEuler
 			Assert::AreEqual(6, p.Solve(3));
 			Assert::AreEqual(28, p.Solve(4));
 			Assert::AreEqual(28, p.Solve(5));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler013)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P013LargeSum p;
+			const std::vector<std::string> vs = {
+				"37107287533902102798797998220837590246510135740250",
+				"46376937677490009712648124896970078050417018260538",
+				"74324986199524741059474233309513058123726617309629",
+				"91942213363574161572522430563301811072406154908250",
+				"23067588207539346171171980310421047513778063246676"
+			};
+			Assert::AreEqual(std::string("2728190129"), p.Solve(vs));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler014)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P014LongestCollatzSequence p;
+			Assert::AreEqual(9ULL, p.Solve(10ULL));
+			Assert::AreEqual(9ULL, p.Solve(15ULL));
+			Assert::AreEqual(19ULL, p.Solve(20ULL));
 		}
 	};
 }

@@ -35,6 +35,7 @@ long P011LargestProductInAGrid::Solve(const int (&grid)[20][20])
 
 void P011LargestProductInAGrid::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int grid[20][20];
 	for (int grid_i = 0; grid_i < 20; grid_i++) {
 		for (int grid_j = 0; grid_j < 20; grid_j++) {

@@ -48,6 +48,7 @@ int P012HighlyDivisibleTriangularNumber::Solve(int n)
 
 void P012HighlyDivisibleTriangularNumber::main()
 {
+	std::ios_base::sync_with_stdio(false);
 	int T;
 	std::cin >> T;
 	P012HighlyDivisibleTriangularNumber p;
