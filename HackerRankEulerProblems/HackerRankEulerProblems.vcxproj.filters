@@ -111,6 +111,15 @@
     <ClCompile Include="20\P020_FactorialDigitSum.cpp">
       <Filter>Source Files\20</Filter>
     </ClCompile>
+    <ClCompile Include="40\P021_AmicableNumbers.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
+    <ClCompile Include="40\P022_NamesScores.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
+    <ClCompile Include="40\P023_NonAbundantSums.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -187,6 +196,15 @@
     </ClInclude>
     <ClInclude Include="20\P020_FactorialDigitSum.h">
       <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P021_AmicableNumbers.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P022_NamesScores.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P023_NonAbundantSums.h">
+      <Filter>Header Files\40</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

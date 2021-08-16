@@ -3,6 +3,8 @@
 #include "libs/numeric.h"
 using namespace hackerrank_euler;
 
+// Starting from the second to the last row, we compute the maximum total
+// for each point, until we reach the root.
 int P018_MaximumPathSumI::Solve(std::vector<int> tri)
 {
 	const int n = (int)(FloorSqrt(tri.size() * 8 + 1) - 1) / 2;

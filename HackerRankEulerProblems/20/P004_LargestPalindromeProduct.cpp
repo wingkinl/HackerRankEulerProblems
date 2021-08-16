@@ -1,12 +1,10 @@
 #include "P004_LargestPalindromeProduct.h"
 #include <iostream>
-#include <vector>
 #include <algorithm>
 
-static std::vector<int> all_palindromes;
-
-static void InitPalindrome()
+void P004_LargestPalindromeProduct::InitPalindrome()
 {
+	all_palindromes.reserve(1000);
 	char buffer[7] = { 0 };
 	for (int n1 = 100; n1 < 1000; ++n1)
 	{
@@ -25,7 +23,7 @@ static void InitPalindrome()
 			}
 		}
 	}
-	std::stable_sort(all_palindromes.begin(), all_palindromes.end());
+	std::sort(all_palindromes.begin(), all_palindromes.end());
 }
 
 int P004_LargestPalindromeProduct::Solve(int n)
@@ -47,10 +45,11 @@ void P004_LargestPalindromeProduct::main()
 	std::ios_base::sync_with_stdio(false);
 	int t;
 	std::cin >> t;
+	P004_LargestPalindromeProduct p;
 	for (int ii = 0; ii < t; ii++)
 	{
 		long n;
 		std::cin >> n;
-		std::cout << Solve(n) << "\n";
+		std::cout << p.Solve(n) << "\n";
 	}
 }

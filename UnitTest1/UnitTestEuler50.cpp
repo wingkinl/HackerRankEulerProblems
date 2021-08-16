@@ -20,6 +20,9 @@
 #include "../HackerRankEulerProblems/20/P018_MaximumPathSumI.h"
 #include "../HackerRankEulerProblems/20/P019_CountingSundays.h"
 #include "../HackerRankEulerProblems/20/P020_FactorialDigitSum.h"
+#include "../HackerRankEulerProblems/40/P021_AmicableNumbers.h"
+#include "../HackerRankEulerProblems/40/P022_NamesScores.h"
+#include "../HackerRankEulerProblems/40/P023_NonAbundantSums.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -62,8 +65,9 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(101101, P004_LargestPalindromeProduct::Solve(101110));
-			Assert::AreEqual(793397, P004_LargestPalindromeProduct::Solve(800000));
+			P004_LargestPalindromeProduct p;
+			Assert::AreEqual(101101, p.Solve(101110));
+			Assert::AreEqual(793397, p.Solve(800000));
 		}
 	};
 
@@ -208,8 +212,8 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			P015_LatticePaths p;
-			Assert::AreEqual(6u, p.Solve(2, 2));
-			Assert::AreEqual(10u, p.Solve(3, 2));
+			Assert::AreEqual(6U, p.Solve(2, 2));
+			Assert::AreEqual(10U, p.Solve(3, 2));
 		}
 	};
 
@@ -269,6 +273,38 @@ namespace UnitTestEuler
 			Assert::AreEqual(6ULL, P020_FactorialDigitSum::Solve(3));
 			Assert::AreEqual(9ULL, P020_FactorialDigitSum::Solve(6));
 			Assert::AreEqual(27ULL, P020_FactorialDigitSum::Solve(10));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler021)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P021_AmicableNumbers p;
+			Assert::AreEqual(504ULL, p.Solve(300));
+			Assert::AreEqual(2898ULL, p.Solve(2000));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler022)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P022_NamesScores p({"ALEX", "LUIS","JAMES","BRIAN","PAMELA"});
+			Assert::AreEqual(240U, p.Solve("PAMELA"));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler023)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P023_NonAbundantSums p;
+			Assert::IsTrue(p.Solve(24));
+			Assert::IsFalse(p.Solve(49));
 		}
 	};
 }

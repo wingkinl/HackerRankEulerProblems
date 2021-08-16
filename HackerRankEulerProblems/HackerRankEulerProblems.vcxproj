@@ -167,6 +167,9 @@
     <ClCompile Include="20\P018_MaximumPathSumI.cpp" />
     <ClCompile Include="20\P019_CountingSundays.cpp" />
     <ClCompile Include="20\P020_FactorialDigitSum.cpp" />
+    <ClCompile Include="40\P021_AmicableNumbers.cpp" />
+    <ClCompile Include="40\P022_NamesScores.cpp" />
+    <ClCompile Include="40\P023_NonAbundantSums.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -192,6 +195,9 @@
     <ClInclude Include="20\P018_MaximumPathSumI.h" />
     <ClInclude Include="20\P019_CountingSundays.h" />
     <ClInclude Include="20\P020_FactorialDigitSum.h" />
+    <ClInclude Include="40\P021_AmicableNumbers.h" />
+    <ClInclude Include="40\P022_NamesScores.h" />
+    <ClInclude Include="40\P023_NonAbundantSums.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

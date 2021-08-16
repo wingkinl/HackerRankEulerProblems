@@ -76,6 +76,52 @@ namespace hackerrank_euler
 		}
 		return ans;
 	}
+
+	template <typename T>
+	inline auto div(T numerator, T denominator)
+	{
+		return ::div(numerator, denominator);
+	}
+
+	template <>
+	inline auto div<long>(long numerator, long denominator)
+	{
+		return ldiv(numerator, denominator);
+	}
+
+	template <>
+	inline auto div<unsigned int>(unsigned int numerator, unsigned int denominator)
+	{
+		return lldiv(numerator, denominator);
+	}
+
+	template <>
+	inline auto div<long long>(long long numerator, long long denominator)
+	{
+		return lldiv(numerator, denominator);
+	}
+
+	template <typename T>
+	T get_sum_of_divisors(T n)
+	{
+		T sum = 1;
+		T n2 = (T)sqrt(n);
+		if (n != 1 && n2 * n2 == n)
+		{
+			sum += n2;
+			--n2;
+		}
+		for (T ii = 2; ii <= n2; ++ii)
+		{
+			auto dd = div(n, ii);
+			if (dd.rem == 0)
+			{
+				sum += ii;
+				sum += (T)dd.quot;
+			}
+		}
+		return sum;
+	}
 }
 
 #endif // LIBS_NUMERIC_H_
