@@ -11,6 +11,7 @@
 #include "../HackerRankEulerProblems/20/P009_SpecialPythagoreanTriplet.h"
 #include "../HackerRankEulerProblems/20/P010_SummationOfPrimes.h"
 #include "../HackerRankEulerProblems/20/P011_LargestProductInAGrid.h"
+#include "../HackerRankEulerProblems/20/P012_HighlyDivisibleTriangularNumber.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -147,6 +148,20 @@ namespace UnitTestEuler
 				{01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48}
 			};
 			Assert::AreEqual(73812150L, P011LargestProductInAGrid::Solve(grid));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler012)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P012HighlyDivisibleTriangularNumber p;
+			Assert::AreEqual(3, p.Solve(1));
+			Assert::AreEqual(6, p.Solve(2));
+			Assert::AreEqual(6, p.Solve(3));
+			Assert::AreEqual(28, p.Solve(4));
+			Assert::AreEqual(28, p.Solve(5));
 		}
 	};
 }
