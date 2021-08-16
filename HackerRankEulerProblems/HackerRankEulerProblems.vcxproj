@@ -164,6 +164,7 @@
     <ClCompile Include="20\P015_LatticePaths.cpp" />
     <ClCompile Include="20\P016_PowerDigitSum.cpp" />
     <ClCompile Include="20\P017_NumberToWords.cpp" />
+    <ClCompile Include="20\P018_MaximumPathSumI.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -186,6 +187,7 @@
     <ClInclude Include="20\P015_LatticePaths.h" />
     <ClInclude Include="20\P016_PowerDigitSum.h" />
     <ClInclude Include="20\P017_NumberToWords.h" />
+    <ClInclude Include="20\P018_MaximumPathSumI.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

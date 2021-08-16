@@ -17,6 +17,7 @@
 #include "../HackerRankEulerProblems/20/P015_LatticePaths.h"
 #include "../HackerRankEulerProblems/20/P016_PowerDigitSum.h"
 #include "../HackerRankEulerProblems/20/P017_NumberToWords.h"
+#include "../HackerRankEulerProblems/20/P018_MaximumPathSumI.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -231,6 +232,20 @@ namespace UnitTestEuler
 			Assert::AreEqual(std::string("One Hundred Four Billion Three Hundred "
 				"Eighty Two Million Four Hundred Twenty Six Thousand One Hundred Twelve"), 
 				P017_NumberToWords::Solve(104382426112ULL));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler018)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(23, P018_MaximumPathSumI::Solve({
+				3,
+				7,4,
+				2,4,6,
+				8,5,9,3
+				}));
 		}
 	};
 }

@@ -31,7 +31,7 @@ std::string P017_NumberToWords::Solve(uint64_t n)
 			}
 			if (dd.rem >= 20)
 			{
-				ss << prefix << aNumWords10X[dd.rem/10-2];
+				ss << prefix << aNumWords10X[dd.rem / 10 - 2];
 				if (dd.rem % 10)
 					ss << ' ' << aNumWords20[dd.rem % 10];
 				prefix = " ";
