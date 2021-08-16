@@ -14,6 +14,7 @@
 #include "../HackerRankEulerProblems/20/P012_HighlyDivisibleTriangularNumber.h"
 #include "../HackerRankEulerProblems/20/P013_LargeSum.h"
 #include "../HackerRankEulerProblems/20/P014_LongestCollatzSequence.h"
+#include "../HackerRankEulerProblems/20/P015_LatticePaths.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -193,6 +194,17 @@ namespace UnitTestEuler
 			Assert::AreEqual(9ULL, p.Solve(10ULL));
 			Assert::AreEqual(9ULL, p.Solve(15ULL));
 			Assert::AreEqual(19ULL, p.Solve(20ULL));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler015)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P015LatticePaths p;
+			Assert::AreEqual(6u, p.Solve(2, 2));
+			Assert::AreEqual(10u, p.Solve(3, 2));
 		}
 	};
 }

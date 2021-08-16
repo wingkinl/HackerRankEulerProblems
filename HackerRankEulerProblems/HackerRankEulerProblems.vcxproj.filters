@@ -90,6 +90,9 @@
     <ClCompile Include="20\P014_LongestCollatzSequence.cpp">
       <Filter>Source Files\20</Filter>
     </ClCompile>
+    <ClCompile Include="20\P015_LatticePaths.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -144,6 +147,9 @@
       <Filter>Header Files\20</Filter>
     </ClInclude>
     <ClInclude Include="20\P014_LongestCollatzSequence.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P015_LatticePaths.h">
       <Filter>Header Files\20</Filter>
     </ClInclude>
   </ItemGroup>

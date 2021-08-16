@@ -161,6 +161,7 @@
     <ClCompile Include="20\P012_HighlyDivisibleTriangularNumber.cpp" />
     <ClCompile Include="20\P013_LargeSum.cpp" />
     <ClCompile Include="20\P014_LongestCollatzSequence.cpp" />
+    <ClCompile Include="20\P015_LatticePaths.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
   </ItemGroup>
@@ -179,6 +180,7 @@
     <ClInclude Include="20\P012_HighlyDivisibleTriangularNumber.h" />
     <ClInclude Include="20\P013_LargeSum.h" />
     <ClInclude Include="20\P014_LongestCollatzSequence.h" />
+    <ClInclude Include="20\P015_LatticePaths.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\numeric.h" />
     <ClInclude Include="libs\prime.h" />
