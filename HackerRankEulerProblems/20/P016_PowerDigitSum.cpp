@@ -23,6 +23,6 @@ void P016_PowerDigitSum::main()
 	{
 		int n;
 		std::cin >> n;
-		std::cout << P016_PowerDigitSum::Solve(n) << "\n";
+		std::cout << Solve(n) << "\n";
 	}
 }

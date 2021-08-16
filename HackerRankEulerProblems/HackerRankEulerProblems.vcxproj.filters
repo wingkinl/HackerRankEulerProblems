@@ -105,6 +105,9 @@
     <ClCompile Include="20\P018_MaximumPathSumI.cpp">
       <Filter>Source Files\20</Filter>
     </ClCompile>
+    <ClCompile Include="20\P019_CountingSundays.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -174,6 +177,9 @@
       <Filter>Header Files\20</Filter>
     </ClInclude>
     <ClInclude Include="20\P018_MaximumPathSumI.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P019_CountingSundays.h">
       <Filter>Header Files\20</Filter>
     </ClInclude>
   </ItemGroup>

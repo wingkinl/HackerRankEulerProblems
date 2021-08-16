@@ -57,6 +57,6 @@ void P017_NumberToWords::main()
 	{
 		uint64_t n;
 		std::cin >> n;
-		std::cout << P017_NumberToWords::Solve(n) << "\n";
+		std::cout << Solve(n) << "\n";
 	}
 }

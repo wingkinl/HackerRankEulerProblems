@@ -18,6 +18,7 @@
 #include "../HackerRankEulerProblems/20/P016_PowerDigitSum.h"
 #include "../HackerRankEulerProblems/20/P017_NumberToWords.h"
 #include "../HackerRankEulerProblems/20/P018_MaximumPathSumI.h"
+#include "../HackerRankEulerProblems/20/P019_CountingSundays.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -246,6 +247,16 @@ namespace UnitTestEuler
 				2,4,6,
 				8,5,9,3
 				}));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler019)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(18, P019_CountingSundays::Solve({1900,1,1}, {1910,1,1}));
+			Assert::AreEqual(35, P019_CountingSundays::Solve({2000,1,1}, {2020,1,1}));
 		}
 	};
 }
