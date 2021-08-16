@@ -9,23 +9,18 @@ BigInt::BigInt(int32_t val)
 	Assign(val);
 }
 
-BigInt::BigInt(int32_t nBase, int32_t n)
+// https://en.wikipedia.org/wiki/Exponentiation_by_squaring#Basic_method
+BigInt::BigInt(int32_t base, int32_t exp)
 {
-	Assign(n == 0 ? 1 : nBase);
-	if (n <= 1)
+	Assign(exp == 0 ? 1 : base);
+	if (exp <= 1)
 		return;
 	BigInt y(1);
-	while (n > 1)
+	while (exp > 1)
 	{
-		if (n & 1)
-		{
+		if (exp & 1)
 			y.Multiply(*this);
-			n = (n - 1) >> 1;
-		}
-		else
-		{
-			n >>= 1;
-		}
+		exp >>= 1;
 		Multiply(*this);
 	}
 	Multiply(y);
@@ -112,7 +107,7 @@ BigInt& BigInt::Multiply(const BigInt& rhs)
 }
 
 #ifndef _countof
-#define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
+	#define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
 #endif
 
 size_t BigInt::GetDigits() const

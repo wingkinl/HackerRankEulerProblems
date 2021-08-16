@@ -16,6 +16,7 @@
 #include "../HackerRankEulerProblems/20/P014_LongestCollatzSequence.h"
 #include "../HackerRankEulerProblems/20/P015_LatticePaths.h"
 #include "../HackerRankEulerProblems/20/P016_PowerDigitSum.h"
+#include "../HackerRankEulerProblems/20/P017_NumberToWords.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -27,8 +28,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(23ULL, P001MultiplesOf3And5::Solve(10));
-			Assert::AreEqual(2318ULL, P001MultiplesOf3And5::Solve(100));
+			Assert::AreEqual(23ULL, P001_MultiplesOf3And5::Solve(10));
+			Assert::AreEqual(2318ULL, P001_MultiplesOf3And5::Solve(100));
 		}
 	};
 
@@ -37,8 +38,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(10ULL, P002SumOfEvenFibonacciNumbers::Solve(10));
-			Assert::AreEqual(44ULL, P002SumOfEvenFibonacciNumbers::Solve(100));
+			Assert::AreEqual(10ULL, P002_SumOfEvenFibonacciNumbers::Solve(10));
+			Assert::AreEqual(44ULL, P002_SumOfEvenFibonacciNumbers::Solve(100));
 		}
 	};
 
@@ -47,9 +48,9 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(5ULL, P003LargestPrimeFactor::Solve(10));
-			Assert::AreEqual(17ULL, P003LargestPrimeFactor::Solve(17));
-			Assert::AreEqual(29ULL, P003LargestPrimeFactor::Solve(13195));
+			Assert::AreEqual(5ULL, P003_LargestPrimeFactor::Solve(10));
+			Assert::AreEqual(17ULL, P003_LargestPrimeFactor::Solve(17));
+			Assert::AreEqual(29ULL, P003_LargestPrimeFactor::Solve(13195));
 		}
 	};
 
@@ -58,8 +59,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(101101, P004LargestPalindromeProduct::Solve(101110));
-			Assert::AreEqual(793397, P004LargestPalindromeProduct::Solve(800000));
+			Assert::AreEqual(101101, P004_LargestPalindromeProduct::Solve(101110));
+			Assert::AreEqual(793397, P004_LargestPalindromeProduct::Solve(800000));
 		}
 	};
 
@@ -68,8 +69,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(6, P005SmallestMultiple::Solve(3));
-			Assert::AreEqual(2520, P005SmallestMultiple::Solve(10));
+			Assert::AreEqual(6, P005_SmallestMultiple::Solve(3));
+			Assert::AreEqual(2520, P005_SmallestMultiple::Solve(10));
 		}
 	};
 
@@ -78,8 +79,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(22L, P006SumSquareDifference::Solve(3L));
-			Assert::AreEqual(2640L, P006SumSquareDifference::Solve(10L));
+			Assert::AreEqual(22L, P006_SumSquareDifference::Solve(3L));
+			Assert::AreEqual(2640L, P006_SumSquareDifference::Solve(10L));
 		}
 	};
 
@@ -88,8 +89,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(5, P00710001stPrime::Solve(3));
-			Assert::AreEqual(13, P00710001stPrime::Solve(6));
+			Assert::AreEqual(5, P007_10001stPrime::Solve(3));
+			Assert::AreEqual(13, P007_10001stPrime::Solve(6));
 		}
 	};
 
@@ -98,8 +99,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(3150, P008LargestProductInASeries::Solve("3675356291", 5));
-			Assert::AreEqual(0, P008LargestProductInASeries::Solve("2709360626", 5));
+			Assert::AreEqual(3150, P008_LargestProductInASeries::Solve("3675356291", 5));
+			Assert::AreEqual(0, P008_LargestProductInASeries::Solve("2709360626", 5));
 		}
 	};
 
@@ -108,8 +109,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(60, P009SpecialPythagoreanTriplet::Solve(12));
-			Assert::AreEqual(-1, P009SpecialPythagoreanTriplet::Solve(4));
+			Assert::AreEqual(60, P009_SpecialPythagoreanTriplet::Solve(12));
+			Assert::AreEqual(-1, P009_SpecialPythagoreanTriplet::Solve(4));
 		}
 	};
 
@@ -118,8 +119,8 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(10L, P010SummationOfPrimes::Solve(5));
-			Assert::AreEqual(17L, P010SummationOfPrimes::Solve(10));
+			Assert::AreEqual(10L, P010_SummationOfPrimes::Solve(5));
+			Assert::AreEqual(17L, P010_SummationOfPrimes::Solve(10));
 		}
 	};
 
@@ -151,7 +152,7 @@ namespace UnitTestEuler
 				{20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54},
 				{01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48}
 			};
-			Assert::AreEqual(73812150L, P011LargestProductInAGrid::Solve(grid));
+			Assert::AreEqual(73812150L, P011_LargestProductInAGrid::Solve(grid));
 		}
 	};
 
@@ -160,7 +161,7 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			P012HighlyDivisibleTriangularNumber p;
+			P012_HighlyDivisibleTriangularNumber p;
 			Assert::AreEqual(3, p.Solve(1));
 			Assert::AreEqual(6, p.Solve(2));
 			Assert::AreEqual(6, p.Solve(3));
@@ -174,7 +175,7 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			P013LargeSum p;
+			P013_LargeSum p;
 			const std::vector<std::string> vs = {
 				"37107287533902102798797998220837590246510135740250",
 				"46376937677490009712648124896970078050417018260538",
@@ -191,7 +192,7 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			P014LongestCollatzSequence p;
+			P014_LongestCollatzSequence p;
 			Assert::AreEqual(9ULL, p.Solve(10ULL));
 			Assert::AreEqual(9ULL, p.Solve(15ULL));
 			Assert::AreEqual(19ULL, p.Solve(20ULL));
@@ -203,7 +204,7 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			P015LatticePaths p;
+			P015_LatticePaths p;
 			Assert::AreEqual(6u, p.Solve(2, 2));
 			Assert::AreEqual(10u, p.Solve(3, 2));
 		}
@@ -214,9 +215,22 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test)
 		{
-			Assert::AreEqual(8ULL, P016PowerDigitSum::Solve(3));
-			Assert::AreEqual(7ULL, P016PowerDigitSum::Solve(4));
-			Assert::AreEqual(11ULL, P016PowerDigitSum::Solve(7));
+			Assert::AreEqual(8ULL, P016_PowerDigitSum::Solve(3));
+			Assert::AreEqual(7ULL, P016_PowerDigitSum::Solve(4));
+			Assert::AreEqual(11ULL, P016_PowerDigitSum::Solve(7));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler017)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(std::string("Ten"), P017_NumberToWords::Solve(10ULL));
+			Assert::AreEqual(std::string("Seventeen"), P017_NumberToWords::Solve(17ULL));
+			Assert::AreEqual(std::string("One Hundred Four Billion Three Hundred "
+				"Eighty Two Million Four Hundred Twenty Six Thousand One Hundred Twelve"), 
+				P017_NumberToWords::Solve(104382426112ULL));
 		}
 	};
 }

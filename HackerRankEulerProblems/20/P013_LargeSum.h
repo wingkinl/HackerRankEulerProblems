@@ -6,7 +6,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler013/problem
 
-struct P013LargeSum
+struct P013_LargeSum
 {
 	std::string Solve(const std::vector<std::string>& vs);
 

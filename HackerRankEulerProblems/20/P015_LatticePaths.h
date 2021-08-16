@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler015/problem
 
-struct P015LatticePaths
+struct P015_LatticePaths
 {
 	unsigned int Solve(int n, int m);
 

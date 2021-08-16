@@ -4,7 +4,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler008/problem
 
-struct P008LargestProductInASeries
+struct P008_LargestProductInASeries
 {
 	static int Solve(const std::string& str, int consecutive);
 

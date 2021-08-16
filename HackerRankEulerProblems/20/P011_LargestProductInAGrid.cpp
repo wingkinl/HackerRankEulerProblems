@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-long P011LargestProductInAGrid::Solve(const int (&grid)[20][20])
+long P011_LargestProductInAGrid::Solve(const int (&grid)[20][20])
 {
 	const size_t kGridSize = 20;
 	long max_product = 0;
@@ -33,7 +33,7 @@ long P011LargestProductInAGrid::Solve(const int (&grid)[20][20])
 	return max_product;
 }
 
-void P011LargestProductInAGrid::main()
+void P011_LargestProductInAGrid::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int grid[20][20];

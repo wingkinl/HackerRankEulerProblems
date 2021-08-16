@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler007/problem
 
-struct P00710001stPrime
+struct P007_10001stPrime
 {
 	static int Solve(int n);
 

@@ -28,7 +28,7 @@ static void InitPalindrome()
 	std::stable_sort(all_palindromes.begin(), all_palindromes.end());
 }
 
-int P004LargestPalindromeProduct::Solve(int n)
+int P004_LargestPalindromeProduct::Solve(int n)
 {
 	if (all_palindromes.empty())
 	{
@@ -42,7 +42,7 @@ int P004LargestPalindromeProduct::Solve(int n)
 	return 0;
 }
 
-void P004LargestPalindromeProduct::main()
+void P004_LargestPalindromeProduct::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

@@ -21,7 +21,7 @@
 //   3 2 1
 //   1 1 X
 //
-unsigned int P015LatticePaths::Solve(int n, int m)
+unsigned int P015_LatticePaths::Solve(int n, int m)
 {
 	std::vector<uint64_t> routes(n + 1, 1);
 	for (int mm = m - 1; mm >= 0; --mm)
@@ -34,12 +34,12 @@ unsigned int P015LatticePaths::Solve(int n, int m)
 	return (unsigned int)(routes[0] % (1000000007));
 }
 
-void P015LatticePaths::main()
+void P015_LatticePaths::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int T;
 	std::cin >> T;
-	P015LatticePaths p;
+	P015_LatticePaths p;
 	for (int t = 0; t < T; ++t)
 	{
 		int n, m;

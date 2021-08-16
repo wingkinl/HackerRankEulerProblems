@@ -4,7 +4,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler012/problem
 
-struct P012HighlyDivisibleTriangularNumber
+struct P012_HighlyDivisibleTriangularNumber
 {
 	int Solve(int n);
 

@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler010/problem
 
-struct P010SummationOfPrimes
+struct P010_SummationOfPrimes
 {
 	static long Solve(long n);
 

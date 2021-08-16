@@ -1,7 +1,7 @@
 #include "P006_SumSquareDifference.h"
 #include <iostream>
 
-long P006SumSquareDifference::Solve(long n)
+long P006_SumSquareDifference::Solve(long n)
 {
 	long a = 0, b = 0;
 	for (long ii = 1; ii <= n; ++ii)
@@ -12,7 +12,7 @@ long P006SumSquareDifference::Solve(long n)
 	return a * a - b;
 }
 
-void P006SumSquareDifference::main()
+void P006_SumSquareDifference::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

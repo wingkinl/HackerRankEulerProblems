@@ -4,7 +4,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler011/problem
 
-struct P011LargestProductInAGrid
+struct P011_LargestProductInAGrid
 {
 	static long Solve(const int (&grid)[20][20]);
 

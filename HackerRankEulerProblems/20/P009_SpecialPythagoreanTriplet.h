@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler009/problem
 
-struct P009SpecialPythagoreanTriplet
+struct P009_SpecialPythagoreanTriplet
 {
 	static int Solve(int n);
 

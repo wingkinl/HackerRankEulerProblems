@@ -5,7 +5,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem
 
-struct P002SumOfEvenFibonacciNumbers
+struct P002_SumOfEvenFibonacciNumbers
 {
 	static uint64_t Solve(uint32_t n);
 

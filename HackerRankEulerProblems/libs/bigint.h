@@ -21,7 +21,7 @@ class BigInt
 	friend std::istream& operator>>(std::istream& s, BigInt& val);
 public:
 	BigInt(int32_t val = 0);
-	BigInt(int32_t nBase, int32_t nPower);
+	BigInt(int32_t base, int32_t exp);
 	BigInt(const std::string& str);
 	BigInt(const char* str);
 public:

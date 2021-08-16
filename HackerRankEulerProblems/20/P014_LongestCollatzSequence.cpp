@@ -1,7 +1,7 @@
 #include "P014_LongestCollatzSequence.h"
 #include <iostream>
 
-uint64_t P014LongestCollatzSequence::GetTermStep(uint64_t term)
+uint64_t P014_LongestCollatzSequence::GetTermStep(uint64_t term)
 {
 	if (term == 1)
 		return 0;
@@ -20,7 +20,7 @@ uint64_t P014LongestCollatzSequence::GetTermStep(uint64_t term)
 	return step + GetTermStep(next_term);
 }
 
-uint64_t P014LongestCollatzSequence::Solve(uint64_t n)
+uint64_t P014_LongestCollatzSequence::Solve(uint64_t n)
 {
 	if (max_step_nums.empty())
 	{
@@ -53,12 +53,12 @@ uint64_t P014LongestCollatzSequence::Solve(uint64_t n)
 	return max_step_nums[n];
 }
 
-void P014LongestCollatzSequence::main()
+void P014_LongestCollatzSequence::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int T;
 	std::cin >> T;
-	P014LongestCollatzSequence p;
+	P014_LongestCollatzSequence p;
 	for (int t = 0; t < T; ++t)
 	{
 		uint64_t n;

@@ -5,7 +5,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler014/problem
 
-struct P014LongestCollatzSequence
+struct P014_LongestCollatzSequence
 {
 	uint64_t Solve(uint64_t n);
 

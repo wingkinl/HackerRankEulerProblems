@@ -2,7 +2,7 @@
 #include <iostream>
 #include "libs/numeric.h"
 
-int P005SmallestMultiple::Solve(int n)
+int P005_SmallestMultiple::Solve(int n)
 {
 	int v = 1;
 	for (int ii = 2; ii <= n; ++ii)
@@ -12,7 +12,7 @@ int P005SmallestMultiple::Solve(int n)
 	return v;
 }
 
-void P005SmallestMultiple::main()
+void P005_SmallestMultiple::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

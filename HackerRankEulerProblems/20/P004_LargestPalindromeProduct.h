@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler004/problem
 
-struct P004LargestPalindromeProduct
+struct P004_LargestPalindromeProduct
 {
 	static int Solve(int n);
 

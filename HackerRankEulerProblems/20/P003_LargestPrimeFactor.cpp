@@ -1,7 +1,7 @@
 #include "P003_LargestPrimeFactor.h"
 #include <iostream>
 
-uint64_t P003LargestPrimeFactor::Solve(uint64_t n)
+uint64_t P003_LargestPrimeFactor::Solve(uint64_t n)
 {
 	uint64_t max = 2;
 	while (n % 2 == 0)
@@ -26,7 +26,7 @@ uint64_t P003LargestPrimeFactor::Solve(uint64_t n)
 	return max;
 }
 
-void P003LargestPrimeFactor::main()
+void P003_LargestPrimeFactor::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

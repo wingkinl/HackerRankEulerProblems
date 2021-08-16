@@ -4,14 +4,14 @@
 
 using namespace hackerrank_euler;
 
-int P00710001stPrime::Solve(int n)
+int P007_10001stPrime::Solve(int n)
 {
 	PrimeNumbers<int> primes;
 	primes.InitPrimes(10000);
 	return primes.nums[n-1];
 }
 
-void P00710001stPrime::main()
+void P007_10001stPrime::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

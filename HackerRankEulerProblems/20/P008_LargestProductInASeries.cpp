@@ -1,7 +1,7 @@
 #include "P008_LargestProductInASeries.h"
 #include <iostream>
 
-int P008LargestProductInASeries::Solve(const std::string& str, int consecutive)
+int P008_LargestProductInASeries::Solve(const std::string& str, int consecutive)
 {
 	const auto kLen = (int)str.length();
 	int max_product = 0;
@@ -20,7 +20,7 @@ int P008LargestProductInASeries::Solve(const std::string& str, int consecutive)
 	return max_product;
 }
 
-void P008LargestProductInASeries::main()
+void P008_LargestProductInASeries::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int tt;

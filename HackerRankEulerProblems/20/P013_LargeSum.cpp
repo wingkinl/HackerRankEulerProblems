@@ -1,7 +1,7 @@
 #include "P013_LargeSum.h"
 #include <iostream>
 
-std::string P013LargeSum::Solve(const std::vector<std::string>& vs)
+std::string P013_LargeSum::Solve(const std::vector<std::string>& vs)
 {
 	std::string result(50, '0');
 	size_t carry = 0;
@@ -27,7 +27,7 @@ std::string P013LargeSum::Solve(const std::vector<std::string>& vs)
 	return result;
 }
 
-void P013LargeSum::main()
+void P013_LargeSum::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int N;
@@ -37,6 +37,6 @@ void P013LargeSum::main()
 	{
 		std::cin >> vs[ii];
 	}
-	P013LargeSum p;
+	P013_LargeSum p;
 	std::cout << p.Solve(vs) << "\n";
 }

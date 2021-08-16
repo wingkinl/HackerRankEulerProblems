@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler006/problem
 
-struct P006SumSquareDifference
+struct P006_SumSquareDifference
 {
 	static long Solve(long n);
 

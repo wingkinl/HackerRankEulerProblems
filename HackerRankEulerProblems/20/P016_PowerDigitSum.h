@@ -4,7 +4,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler016/problem
 
-struct P016PowerDigitSum
+struct P016_PowerDigitSum
 {
 	static uint64_t Solve(int n);
 

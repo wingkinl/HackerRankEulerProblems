@@ -3,7 +3,7 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler005/problem
 
-struct P005SmallestMultiple
+struct P005_SmallestMultiple
 {
 	static int Solve(int n);
 

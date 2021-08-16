@@ -9,14 +9,14 @@ static inline uint64_t GetSum(uint64_t n, uint64_t count)
 	return sum;
 }
 
-uint64_t P001MultiplesOf3And5::Solve(uint32_t n)
+uint64_t P001_MultiplesOf3And5::Solve(uint32_t n)
 {
 	--n;
 	size_t sum = GetSum(3, n / 3) + GetSum(5, n / 5) - GetSum(15, n / 15);
 	return sum;
 }
 
-void P001MultiplesOf3And5::main()
+void P001_MultiplesOf3And5::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

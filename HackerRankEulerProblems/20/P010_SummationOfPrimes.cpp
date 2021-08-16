@@ -39,14 +39,14 @@ struct PrimeNumbersSum
 	std::vector<long>		sums;
 };
 
-long P010SummationOfPrimes::Solve(long n)
+long P010_SummationOfPrimes::Solve(long n)
 {
 	PrimeNumbersSum primes;
 	primes.InitPrimeSums(n);
 	return primes.sums[n];
 }
 
-void P010SummationOfPrimes::main()
+void P010_SummationOfPrimes::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

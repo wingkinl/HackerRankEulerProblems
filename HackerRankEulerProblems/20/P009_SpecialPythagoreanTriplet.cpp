@@ -1,7 +1,7 @@
 #include "P009_SpecialPythagoreanTriplet.h"
 #include <iostream>
 
-int P009SpecialPythagoreanTriplet::Solve(int n)
+int P009_SpecialPythagoreanTriplet::Solve(int n)
 {
 	int max = -1;
 	for (int a = 1; a < n / 3; ++a)
@@ -18,7 +18,7 @@ int P009SpecialPythagoreanTriplet::Solve(int n)
 	return max;
 }
 
-void P009SpecialPythagoreanTriplet::main()
+void P009_SpecialPythagoreanTriplet::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int t;

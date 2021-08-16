@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-int P012HighlyDivisibleTriangularNumber::Solve(int n)
+int P012_HighlyDivisibleTriangularNumber::Solve(int n)
 {
 	int tri = 0;
 	if (!tri_divisors.empty() && known_max_divisor > n)
@@ -46,12 +46,12 @@ int P012HighlyDivisibleTriangularNumber::Solve(int n)
 	return tri;
 }
 
-void P012HighlyDivisibleTriangularNumber::main()
+void P012_HighlyDivisibleTriangularNumber::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int T;
 	std::cin >> T;
-	P012HighlyDivisibleTriangularNumber p;
+	P012_HighlyDivisibleTriangularNumber p;
 	for (int t = 0; t < T; ++t)
 	{
 		int n;

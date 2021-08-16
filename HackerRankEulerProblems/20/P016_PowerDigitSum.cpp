@@ -4,7 +4,7 @@
 
 using namespace hackerrank_euler;
 
-uint64_t P016PowerDigitSum::Solve(int n)
+uint64_t P016_PowerDigitSum::Solve(int n)
 {
 	BigInt numP2(2, n);
 	uint64_t sum = 0;
@@ -14,7 +14,7 @@ uint64_t P016PowerDigitSum::Solve(int n)
 	return sum;
 }
 
-void P016PowerDigitSum::main()
+void P016_PowerDigitSum::main()
 {
 	std::ios_base::sync_with_stdio(false);
 	int T;
@@ -23,6 +23,6 @@ void P016PowerDigitSum::main()
 	{
 		int n;
 		std::cin >> n;
-		std::cout << P016PowerDigitSum::Solve(n) << "\n";
+		std::cout << P016_PowerDigitSum::Solve(n) << "\n";
 	}
 }
