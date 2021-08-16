@@ -15,6 +15,7 @@
 #include "../HackerRankEulerProblems/20/P013_LargeSum.h"
 #include "../HackerRankEulerProblems/20/P014_LongestCollatzSequence.h"
 #include "../HackerRankEulerProblems/20/P015_LatticePaths.h"
+#include "../HackerRankEulerProblems/20/P016_PowerDigitSum.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -205,6 +206,17 @@ namespace UnitTestEuler
 			P015LatticePaths p;
 			Assert::AreEqual(6u, p.Solve(2, 2));
 			Assert::AreEqual(10u, p.Solve(3, 2));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler016)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(8ULL, P016PowerDigitSum::Solve(3));
+			Assert::AreEqual(7ULL, P016PowerDigitSum::Solve(4));
+			Assert::AreEqual(11ULL, P016PowerDigitSum::Solve(7));
 		}
 	};
 }

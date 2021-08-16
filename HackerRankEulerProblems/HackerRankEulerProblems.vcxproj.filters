@@ -93,6 +93,12 @@
     <ClCompile Include="20\P015_LatticePaths.cpp">
       <Filter>Source Files\20</Filter>
     </ClCompile>
+    <ClCompile Include="20\P016_PowerDigitSum.cpp">
+      <Filter>Source Files\20</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\bigint.cpp">
+      <Filter>Header Files\libs</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -151,6 +157,12 @@
     </ClInclude>
     <ClInclude Include="20\P015_LatticePaths.h">
       <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="20\P016_PowerDigitSum.h">
+      <Filter>Header Files\20</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\bigint.h">
+      <Filter>Header Files\libs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
