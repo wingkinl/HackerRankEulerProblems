@@ -24,6 +24,7 @@
 #include "../HackerRankEulerProblems/40/P022_NamesScores.h"
 #include "../HackerRankEulerProblems/40/P023_NonAbundantSums.h"
 #include "../HackerRankEulerProblems/40/P024_LexicographicPermutations.h"
+#include "../HackerRankEulerProblems/40/P025_NdigitFibonacciNumber.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -316,6 +317,17 @@ namespace UnitTestEuler
 		{
 			Assert::AreEqual(std::string("abcdefghijklm"), P024_LexicographicPermutations::Solve(1));
 			Assert::AreEqual(std::string("abcdefghijkml"), P024_LexicographicPermutations::Solve(2));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler025)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(12LL, P025_NdigitFibonacciNumber::Solve(3));
+			Assert::AreEqual(17LL, P025_NdigitFibonacciNumber::Solve(4));
+			Assert::AreEqual(45LL, P025_NdigitFibonacciNumber::Solve(10));
 		}
 	};
 }

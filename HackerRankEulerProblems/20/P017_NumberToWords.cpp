@@ -2,10 +2,10 @@
 #include <iostream>
 #include <sstream>
 
-const static char* aNumWords20[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",
+const static char* kNumWords20[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",
     "Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
-const static char* aNumWords10X[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
-const static char* aNumWords1000X[] = {"","Thousand","Million","Billion","Trillion"};
+const static char* kNumWords10X[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
+const static char* kNumWords1000X[] = {"","Thousand","Million","Billion","Trillion"};
 
 #ifndef _countof
     #define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
@@ -18,7 +18,7 @@ std::string P017_NumberToWords::Solve(uint64_t n)
 	std::ostringstream ss;
 	int64_t div_num = 1000000000000;
 	std::string prefix = "";
-	for (int ii = _countof(aNumWords1000X)-1; ii >= 0; --ii)
+	for (int ii = _countof(kNumWords1000X)-1; ii >= 0; --ii)
 	{
 		int64_t val = n / div_num % 1000;
 		if (val)
@@ -26,20 +26,20 @@ std::string P017_NumberToWords::Solve(uint64_t n)
 			auto dd = div((int)val, 100);
 			if (dd.quot > 0)
 			{
-				ss << prefix << aNumWords20[dd.quot] << " Hundred";
+				ss << prefix << kNumWords20[dd.quot] << " Hundred";
 				prefix = " ";
 			}
 			if (dd.rem >= 20)
 			{
-				ss << prefix << aNumWords10X[dd.rem / 10 - 2];
+				ss << prefix << kNumWords10X[dd.rem / 10 - 2];
 				if (dd.rem % 10)
-					ss << ' ' << aNumWords20[dd.rem % 10];
+					ss << ' ' << kNumWords20[dd.rem % 10];
 				prefix = " ";
 			}
 			else if (dd.rem)
-				ss << prefix << aNumWords20[dd.rem];
-			if (aNumWords1000X[ii][0])
-				ss << prefix << aNumWords1000X[ii];
+				ss << prefix << kNumWords20[dd.rem];
+			if (kNumWords1000X[ii][0])
+				ss << prefix << kNumWords1000X[ii];
 
 			prefix = " ";
 		}

@@ -123,6 +123,9 @@
     <ClCompile Include="40\P024_LexicographicPermutations.cpp">
       <Filter>Source Files\40</Filter>
     </ClCompile>
+    <ClCompile Include="40\P025_NdigitFibonacciNumber.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -210,6 +213,9 @@
       <Filter>Header Files\40</Filter>
     </ClInclude>
     <ClInclude Include="40\P024_LexicographicPermutations.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P025_NdigitFibonacciNumber.h">
       <Filter>Header Files\40</Filter>
     </ClInclude>
   </ItemGroup>

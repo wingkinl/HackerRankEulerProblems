@@ -8,15 +8,15 @@
 std::string P024_LexicographicPermutations::Solve(uint64_t n)
 {
 	std::string str = "abcdefghijklm";
-	static const uint64_t aFacts[] = {1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};
-	for (int f = _countof(aFacts)-1; f >= 0; --f)
+	static const uint64_t kFactorials[] = {1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600};
+	for (int f = _countof(kFactorials)-1; f >= 0; --f)
 	{
-		if (n > aFacts[f])
+		if (n > kFactorials[f])
 		{
-			auto dd = lldiv(n-1, aFacts[f]);
-			size_t begin = str.length() - 1 - (f+1);
-			size_t pos = begin + (size_t)dd.quot;
-			std::rotate(str.begin()+begin, str.begin()+(size_t)pos, str.begin()+(size_t)pos+1);
+			auto dd = lldiv(n-1, kFactorials[f]);
+			const size_t begin = str.length() - 1 - (f+1);
+			const size_t pos = begin + (size_t)dd.quot;
+			std::rotate(str.begin()+begin, str.begin()+pos, str.begin()+pos+1);
 			if (dd.rem)
 			{
 				n = (uint64_t)dd.rem+1;
