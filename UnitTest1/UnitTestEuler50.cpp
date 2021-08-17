@@ -317,6 +317,7 @@ namespace UnitTestEuler
 		{
 			Assert::AreEqual(std::string("abcdefghijklm"), P024_LexicographicPermutations::Solve(1));
 			Assert::AreEqual(std::string("abcdefghijkml"), P024_LexicographicPermutations::Solve(2));
+			Assert::AreEqual(std::string("mgdfeibclkjha"), P024_LexicographicPermutations::Solve(6000000000));
 		}
 	};
 
