@@ -23,6 +23,7 @@
 #include "../HackerRankEulerProblems/40/P021_AmicableNumbers.h"
 #include "../HackerRankEulerProblems/40/P022_NamesScores.h"
 #include "../HackerRankEulerProblems/40/P023_NonAbundantSums.h"
+#include "../HackerRankEulerProblems/40/P024_LexicographicPermutations.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -305,6 +306,16 @@ namespace UnitTestEuler
 			P023_NonAbundantSums p;
 			Assert::IsTrue(p.Solve(24));
 			Assert::IsFalse(p.Solve(49));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler024)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(std::string("abcdefghijklm"), P024_LexicographicPermutations::Solve(1));
+			Assert::AreEqual(std::string("abcdefghijkml"), P024_LexicographicPermutations::Solve(2));
 		}
 	};
 }
