@@ -34,6 +34,7 @@
 #include "../HackerRankEulerProblems/40/P032_PandigitalProducts.h"
 #include "../HackerRankEulerProblems/40/P033_DigitCancelingFractions.h"
 #include "../HackerRankEulerProblems/40/P034_DigitFactorials.h"
+#include "../HackerRankEulerProblems/40/P035_CircularPrimes.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -475,6 +476,15 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(19ULL, P034_DigitFactorials::Solve(20));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler035)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(446U, P035_CircularPrimes::Solve(100U));
 		}
 	};
 }

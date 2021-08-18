@@ -13,7 +13,7 @@ namespace hackerrank_euler
 		if (n <= 1)
 			return false;
 		// Check from 2 to square root of n
-		const T kMax = FloorSqrt(n);
+		const T kMax = (T)sqrt(n);
 		for (T ii = 2; ii <= kMax; ++ii)
 			if (n % ii == 0)
 				return false;
