@@ -32,6 +32,7 @@
 #include "../HackerRankEulerProblems/40/P030_DigitNthPowers.h"
 #include "../HackerRankEulerProblems/40/P031_CoinSums.h"
 #include "../HackerRankEulerProblems/40/P032_PandigitalProducts.h"
+#include "../HackerRankEulerProblems/40/P033_DigitCancelingFractions.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -423,6 +424,47 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(12U, P032_PandigitalProducts::Solve(4));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler033)
+	{
+	public:
+		TEST_METHOD(Test_2_1)
+		{
+			auto res = P033_DigitCancelingFractions(2, 1).GetResult();
+			Assert::AreEqual(110LL, res.first);
+			Assert::AreEqual(322LL, res.second);
+		}
+		TEST_METHOD(Test_3_1)
+		{
+			auto res = P033_DigitCancelingFractions(3, 1).GetResult();
+			Assert::AreEqual(77262LL, res.first);
+			Assert::AreEqual(163829LL, res.second);
+		}
+		TEST_METHOD(Test_3_2)
+		{
+			auto res = P033_DigitCancelingFractions(3, 2).GetResult();
+			Assert::AreEqual(7429LL, res.first);
+			Assert::AreEqual(17305LL, res.second);
+		}
+		TEST_METHOD(Test_4_1)
+		{
+			auto res = P033_DigitCancelingFractions(4, 1).GetResult();
+			Assert::AreEqual(12999936LL, res.first);
+			Assert::AreEqual(28131911LL, res.second);
+		}
+		TEST_METHOD(Test_4_2)
+		{
+			auto res = P033_DigitCancelingFractions(4, 2).GetResult();
+			Assert::AreEqual(3571225LL, res.first);
+			Assert::AreEqual(7153900LL, res.second);
+		}
+		TEST_METHOD(Test_4_3)
+		{
+			auto res = P033_DigitCancelingFractions(4, 3).GetResult();
+			Assert::AreEqual(255983LL, res.first);
+			Assert::AreEqual(467405LL, res.second);
 		}
 	};
 }

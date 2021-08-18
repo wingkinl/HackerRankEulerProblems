@@ -147,6 +147,9 @@
     <ClCompile Include="40\P032_PandigitalProducts.cpp">
       <Filter>Source Files\40</Filter>
     </ClCompile>
+    <ClCompile Include="40\P033_DigitCancelingFractions.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -258,6 +261,9 @@
       <Filter>Header Files\40</Filter>
     </ClInclude>
     <ClInclude Include="40\P032_PandigitalProducts.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P033_DigitCancelingFractions.h">
       <Filter>Header Files\40</Filter>
     </ClInclude>
   </ItemGroup>

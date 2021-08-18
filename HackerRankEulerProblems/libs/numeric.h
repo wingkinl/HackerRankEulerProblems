@@ -167,6 +167,48 @@ namespace hackerrank_euler
 		}
 		return res;
 	}
+
+	template <typename Iter, typename ValT>
+	bool NextNonRepeatCombination(Iter first, Iter last, ValT max_val)
+	{
+		if (*first == max_val)
+		{
+			Iter max_iter = first + 1;
+			while (max_iter < last && *max_iter == max_val)
+				++max_iter;
+			if (max_iter == last)
+				return false;
+			auto val = ++(*max_iter);
+			for (auto it = first; it <= max_iter; ++it)
+				*it = val;
+		}
+		else
+		{
+			++(*first);
+		}
+		return true;
+	}
+
+	template <typename Iter, typename ValT>
+	bool NextRepeatCombination(Iter first, Iter last, ValT minV, ValT max_val)
+	{
+		if (*first == max_val)
+		{
+			Iter max_iter = first + 1;
+			while (max_iter < last && *max_iter == max_val)
+				++max_iter;
+			if (max_iter == last)
+				return false;
+			++(*max_iter);
+			for (auto it = first; it < max_iter; ++it)
+				*it = minV;
+		}
+		else
+		{
+			++(*first);
+		}
+		return true;
+	}
 }
 
 #endif // LIBS_NUMERIC_H_
