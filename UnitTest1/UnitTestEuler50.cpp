@@ -36,6 +36,7 @@
 #include "../HackerRankEulerProblems/40/P034_DigitFactorials.h"
 #include "../HackerRankEulerProblems/40/P035_CircularPrimes.h"
 #include "../HackerRankEulerProblems/40/P036_DoubleBasePalindromes.h"
+#include "../HackerRankEulerProblems/40/P037_TruncatablePrimes.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -495,6 +496,15 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(25U, P036_DoubleBasePalindromes::Solve(10,2));
+		}
+	};
+	
+	TEST_CLASS(UnitTestEuler037)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(186U, P037_TruncatablePrimes::Solve(100U));
 		}
 	};
 }
