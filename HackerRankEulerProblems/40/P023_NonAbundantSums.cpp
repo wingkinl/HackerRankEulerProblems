@@ -10,7 +10,7 @@ void P023_NonAbundantSums::Init(uint32_t n)
 	const auto start = max_num ? max_num : 2;
 	for (uint32_t ii = start; ii < n; ++ii)
 	{
-		uint32_t sum = hackerrank_euler::get_sum_of_divisors(ii);
+		uint32_t sum = hackerrank_euler::GetSumOfDivisors(ii);
 		if (sum > ii)
 			abundant.insert(ii);
 	}

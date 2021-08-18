@@ -27,6 +27,8 @@
 #include "../HackerRankEulerProblems/40/P025_NdigitFibonacciNumber.h"
 #include "../HackerRankEulerProblems/40/P026_ReciprocalCycles.h"
 #include "../HackerRankEulerProblems/40/P027_QuadraticPrimes.h"
+#include "../HackerRankEulerProblems/40/P028_NumberSpiralDiagonals.h"
+#include "../HackerRankEulerProblems/40/P029_DistinctPowers.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -367,6 +369,26 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(std::make_pair<int,int>(-1,41), P027_QuadraticPrimes::Solve(42));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler028)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(25ULL, P028_NumberSpiralDiagonals::Solve(3ULL));
+			Assert::AreEqual(101ULL, P028_NumberSpiralDiagonals::Solve(5ULL));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler029)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(15ULL, P029_DistinctPowers::Solve(5));
+			Assert::AreEqual(9981236306ULL, P029_DistinctPowers::Solve(100000));
 		}
 	};
 }

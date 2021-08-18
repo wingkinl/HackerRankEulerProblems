@@ -102,7 +102,7 @@ namespace hackerrank_euler
 	}
 
 	template <typename T>
-	T get_sum_of_divisors(T n)
+	T GetSumOfDivisors(T n)
 	{
 		T sum = 1;
 		T n2 = (T)sqrt(n);
@@ -121,6 +121,51 @@ namespace hackerrank_euler
 			}
 		}
 		return sum;
+	}
+
+	// https://en.wikipedia.org/wiki/Modular_arithmetic
+	// return (base^exponent) % modulo
+	// https://en.wikipedia.org/wiki/Exponentiation_by_squaring
+	template <typename T>
+	T PowerMod(T base, T exponent, T modulo)
+	{
+		T result = 1;
+		while (exponent > 0)
+		{
+			// odd exponent
+			if (exponent & 1)
+			{
+				result = (result * base) % modulo;
+				exponent--;
+			}
+			else
+			{
+				base = (base * base) % modulo;
+				exponent /= 2;
+			}
+		}
+		return result;
+	}
+
+	// https://en.wikipedia.org/wiki/Modular_multiplicative_inverse
+	// return modulo multiplicative inverse of a such that (a*inverse(a)) % p = 1
+	// https://euler.stephan-brumme.com/28/
+	template <typename T>
+	T InverseModulo(T a, T modulo)
+	{
+		return PowerMod(a, modulo - 2, modulo);
+	}
+
+	template <typename T>
+	T IntLog(T base, T x)
+	{
+		T res = 0;
+		while (x > base - 1)
+		{
+			x /= base;
+			++res;
+		}
+		return res;
 	}
 }
 

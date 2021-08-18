@@ -23,7 +23,7 @@ void P021_AmicableNumbers::Init(uint32_t n)
 	amicable_num_info.resize((size_t)n);
 	for (uint32_t ii = start; ii < n; ++ii)
 	{
-		uint32_t sum = hackerrank_euler::get_sum_of_divisors(ii);
+		uint32_t sum = hackerrank_euler::GetSumOfDivisors(ii);
 		if (sum < n)
 		{
 			if (amicable_num_info[ii].pairs.count(sum))
