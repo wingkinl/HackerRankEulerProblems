@@ -1,8 +1,6 @@
 #include "P031_CoinSums.h"
 #include <iostream>
 
-#include <array>
-
 #ifndef _countof
     #define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
 #endif // _countof

@@ -31,6 +31,7 @@
 #include "../HackerRankEulerProblems/40/P029_DistinctPowers.h"
 #include "../HackerRankEulerProblems/40/P030_DigitNthPowers.h"
 #include "../HackerRankEulerProblems/40/P031_CoinSums.h"
+#include "../HackerRankEulerProblems/40/P032_PandigitalProducts.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -413,6 +414,15 @@ namespace UnitTestEuler
 			Assert::AreEqual(11ULL, p.Solve(10));
 			Assert::AreEqual(22ULL, p.Solve(15));
 			Assert::AreEqual(41ULL, p.Solve(20));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler032)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(12U, P032_PandigitalProducts::Solve(4));
 		}
 	};
 }
