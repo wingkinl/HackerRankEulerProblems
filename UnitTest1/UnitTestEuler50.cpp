@@ -25,6 +25,7 @@
 #include "../HackerRankEulerProblems/40/P023_NonAbundantSums.h"
 #include "../HackerRankEulerProblems/40/P024_LexicographicPermutations.h"
 #include "../HackerRankEulerProblems/40/P025_NdigitFibonacciNumber.h"
+#include "../HackerRankEulerProblems/40/P026_ReciprocalCycles.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -329,6 +330,16 @@ namespace UnitTestEuler
 			Assert::AreEqual(12LL, P025_NdigitFibonacciNumber::Solve(3));
 			Assert::AreEqual(17LL, P025_NdigitFibonacciNumber::Solve(4));
 			Assert::AreEqual(45LL, P025_NdigitFibonacciNumber::Solve(10));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler026)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(3, P026_ReciprocalCycles::Solve(5));
+			Assert::AreEqual(7, P026_ReciprocalCycles::Solve(10));
 		}
 	};
 }
