@@ -176,6 +176,7 @@
     <ClCompile Include="40\P027_QuadraticPrimes.cpp" />
     <ClCompile Include="40\P028_NumberSpiralDiagonals.cpp" />
     <ClCompile Include="40\P029_DistinctPowers.cpp" />
+    <ClCompile Include="40\P030_DigitNthPowers.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -210,6 +211,7 @@
     <ClInclude Include="40\P027_QuadraticPrimes.h" />
     <ClInclude Include="40\P028_NumberSpiralDiagonals.h" />
     <ClInclude Include="40\P029_DistinctPowers.h" />
+    <ClInclude Include="40\P030_DigitNthPowers.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

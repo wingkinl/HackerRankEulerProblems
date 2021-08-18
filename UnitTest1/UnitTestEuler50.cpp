@@ -29,6 +29,7 @@
 #include "../HackerRankEulerProblems/40/P027_QuadraticPrimes.h"
 #include "../HackerRankEulerProblems/40/P028_NumberSpiralDiagonals.h"
 #include "../HackerRankEulerProblems/40/P029_DistinctPowers.h"
+#include "../HackerRankEulerProblems/40/P030_DigitNthPowers.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -389,6 +390,15 @@ namespace UnitTestEuler
 		{
 			Assert::AreEqual(15ULL, P029_DistinctPowers::Solve(5));
 			Assert::AreEqual(9981236306ULL, P029_DistinctPowers::Solve(100000));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler030)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(19316, P030_DigitNthPowers::Solve(4));
 		}
 	};
 }
