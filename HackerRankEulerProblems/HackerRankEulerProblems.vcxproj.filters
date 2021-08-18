@@ -156,6 +156,9 @@
     <ClCompile Include="40\P035_CircularPrimes.cpp">
       <Filter>Source Files\40</Filter>
     </ClCompile>
+    <ClCompile Include="40\P036_DoubleBasePalindromes.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -276,6 +279,9 @@
       <Filter>Header Files\40</Filter>
     </ClInclude>
     <ClInclude Include="40\P035_CircularPrimes.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P036_DoubleBasePalindromes.h">
       <Filter>Header Files\40</Filter>
     </ClInclude>
   </ItemGroup>

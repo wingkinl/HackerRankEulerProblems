@@ -182,6 +182,7 @@
     <ClCompile Include="40\P033_DigitCancelingFractions.cpp" />
     <ClCompile Include="40\P034_DigitFactorials.cpp" />
     <ClCompile Include="40\P035_CircularPrimes.cpp" />
+    <ClCompile Include="40\P036_DoubleBasePalindromes.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -222,6 +223,7 @@
     <ClInclude Include="40\P033_DigitCancelingFractions.h" />
     <ClInclude Include="40\P034_DigitFactorials.h" />
     <ClInclude Include="40\P035_CircularPrimes.h" />
+    <ClInclude Include="40\P036_DoubleBasePalindromes.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

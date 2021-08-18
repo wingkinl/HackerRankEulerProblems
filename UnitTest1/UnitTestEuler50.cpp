@@ -35,6 +35,7 @@
 #include "../HackerRankEulerProblems/40/P033_DigitCancelingFractions.h"
 #include "../HackerRankEulerProblems/40/P034_DigitFactorials.h"
 #include "../HackerRankEulerProblems/40/P035_CircularPrimes.h"
+#include "../HackerRankEulerProblems/40/P036_DoubleBasePalindromes.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -485,6 +486,15 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(446U, P035_CircularPrimes::Solve(100U));
+		}
+	};
+	
+	TEST_CLASS(UnitTestEuler036)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(25U, P036_DoubleBasePalindromes::Solve(10,2));
 		}
 	};
 }
