@@ -39,6 +39,7 @@
 #include "../HackerRankEulerProblems/40/P037_TruncatablePrimes.h"
 #include "../HackerRankEulerProblems/40/P038_PandigitalMultiples.h"
 #include "../HackerRankEulerProblems/40/P039_IntegerRightTriangles.h"
+#include "../HackerRankEulerProblems/40/P040_ChampernowneConstant.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -529,6 +530,16 @@ namespace UnitTestEuler
 			P039_IntegerRightTriangles p(100);
 			Assert::AreEqual(12U, p.Solve(12U));
 			Assert::AreEqual(60U, p.Solve(80U));
+		}
+	};
+	
+	TEST_CLASS(UnitTestEuler040)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P040_ChampernowneConstant p;
+			Assert::AreEqual(5040U, p.Solve({1,2,3,4,5,6,7}));
 		}
 	};
 }

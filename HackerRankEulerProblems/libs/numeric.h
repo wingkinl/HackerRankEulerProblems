@@ -40,7 +40,7 @@ namespace hackerrank_euler
 				a = (a - b) >> 1;
 			}
 		}
-		return a * (1 << d);
+		return a * ((T)1 << d);
 	}
 
 	// https://en.wikipedia.org/wiki/Least_common_multiple
