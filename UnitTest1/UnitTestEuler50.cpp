@@ -38,6 +38,7 @@
 #include "../HackerRankEulerProblems/40/P036_DoubleBasePalindromes.h"
 #include "../HackerRankEulerProblems/40/P037_TruncatablePrimes.h"
 #include "../HackerRankEulerProblems/40/P038_PandigitalMultiples.h"
+#include "../HackerRankEulerProblems/40/P039_IntegerRightTriangles.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -517,6 +518,17 @@ namespace UnitTestEuler
 			auto result = P038_PandigitalMultiples::Solve(100U, 8U);
 			Assert::AreEqual(18U, result[0]);
 			Assert::AreEqual(78U, result[1]);
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler039)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P039_IntegerRightTriangles p(100);
+			Assert::AreEqual(12U, p.Solve(12U));
+			Assert::AreEqual(60U, p.Solve(80U));
 		}
 	};
 }

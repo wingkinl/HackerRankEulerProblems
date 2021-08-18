@@ -165,6 +165,9 @@
     <ClCompile Include="40\P038_PandigitalMultiples.cpp">
       <Filter>Source Files\40</Filter>
     </ClCompile>
+    <ClCompile Include="40\P039_IntegerRightTriangles.cpp">
+      <Filter>Source Files\40</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -294,6 +297,9 @@
       <Filter>Header Files\40</Filter>
     </ClInclude>
     <ClInclude Include="40\P038_PandigitalMultiples.h">
+      <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="40\P039_IntegerRightTriangles.h">
       <Filter>Header Files\40</Filter>
     </ClInclude>
   </ItemGroup>
