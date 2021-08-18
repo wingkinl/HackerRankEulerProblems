@@ -173,6 +173,7 @@
     <ClCompile Include="40\P024_LexicographicPermutations.cpp" />
     <ClCompile Include="40\P025_NdigitFibonacciNumber.cpp" />
     <ClCompile Include="40\P026_ReciprocalCycles.cpp" />
+    <ClCompile Include="40\P027_QuadraticPrimes.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="40\P024_LexicographicPermutations.h" />
     <ClInclude Include="40\P025_NdigitFibonacciNumber.h" />
     <ClInclude Include="40\P026_ReciprocalCycles.h" />
+    <ClInclude Include="40\P027_QuadraticPrimes.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

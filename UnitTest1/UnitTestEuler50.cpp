@@ -26,9 +26,27 @@
 #include "../HackerRankEulerProblems/40/P024_LexicographicPermutations.h"
 #include "../HackerRankEulerProblems/40/P025_NdigitFibonacciNumber.h"
 #include "../HackerRankEulerProblems/40/P026_ReciprocalCycles.h"
+#include "../HackerRankEulerProblems/40/P027_QuadraticPrimes.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace Microsoft
+{
+	namespace VisualStudio
+	{
+		namespace CppUnitTestFramework
+		{
+			template <>
+			static std::wstring ToString<std::pair<int, int>>(const std::pair<int, int>& q)
+			{
+				std::wstringstream ss;
+				ss << q.first << ", " << q.second;
+				return ss.str();
+			}
+		}
+	}
+}
 
 namespace UnitTestEuler
 {
@@ -340,6 +358,15 @@ namespace UnitTestEuler
 		{
 			Assert::AreEqual(3, P026_ReciprocalCycles::Solve(5));
 			Assert::AreEqual(7, P026_ReciprocalCycles::Solve(10));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler027)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(std::make_pair<int,int>(-1,41), P027_QuadraticPrimes::Solve(42));
 		}
 	};
 }
