@@ -30,6 +30,7 @@
 #include "../HackerRankEulerProblems/40/P028_NumberSpiralDiagonals.h"
 #include "../HackerRankEulerProblems/40/P029_DistinctPowers.h"
 #include "../HackerRankEulerProblems/40/P030_DigitNthPowers.h"
+#include "../HackerRankEulerProblems/40/P031_CoinSums.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -399,6 +400,19 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(19316, P030_DigitNthPowers::Solve(4));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler031)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P031_CoinSums p;
+			p.Init(20);
+			Assert::AreEqual(11ULL, p.Solve(10));
+			Assert::AreEqual(22ULL, p.Solve(15));
+			Assert::AreEqual(41ULL, p.Solve(20));
 		}
 	};
 }
