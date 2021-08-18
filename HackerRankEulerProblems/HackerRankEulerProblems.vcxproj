@@ -184,6 +184,7 @@
     <ClCompile Include="40\P035_CircularPrimes.cpp" />
     <ClCompile Include="40\P036_DoubleBasePalindromes.cpp" />
     <ClCompile Include="40\P037_TruncatablePrimes.cpp" />
+    <ClCompile Include="40\P038_PandigitalMultiples.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -226,6 +227,7 @@
     <ClInclude Include="40\P035_CircularPrimes.h" />
     <ClInclude Include="40\P036_DoubleBasePalindromes.h" />
     <ClInclude Include="40\P037_TruncatablePrimes.h" />
+    <ClInclude Include="40\P038_PandigitalMultiples.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

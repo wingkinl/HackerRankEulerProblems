@@ -37,6 +37,7 @@
 #include "../HackerRankEulerProblems/40/P035_CircularPrimes.h"
 #include "../HackerRankEulerProblems/40/P036_DoubleBasePalindromes.h"
 #include "../HackerRankEulerProblems/40/P037_TruncatablePrimes.h"
+#include "../HackerRankEulerProblems/40/P038_PandigitalMultiples.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -505,6 +506,17 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(186U, P037_TruncatablePrimes::Solve(100U));
+		}
+	};
+	
+	TEST_CLASS(UnitTestEuler038)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			auto result = P038_PandigitalMultiples::Solve(100U, 8U);
+			Assert::AreEqual(18U, result[0]);
+			Assert::AreEqual(78U, result[1]);
 		}
 	};
 }
