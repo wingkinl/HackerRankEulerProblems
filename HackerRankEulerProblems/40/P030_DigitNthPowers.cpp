@@ -9,7 +9,7 @@ int P030_DigitNthPowers::Solve(int n)
 	// Apparently it's not possible to have 8 digits number to 
 	// get the sum that equals the powers.
 	const int kMax = 8 * 9 * 9 * 9 * 9 * 9 * 9;
-	int sum_total = 0;
+	int total = 0;
 	for (int ii = 2; ii < kMax; ++ii)
 	{
 		std::string str = std::to_string(ii);
@@ -23,10 +23,10 @@ int P030_DigitNthPowers::Solve(int n)
 		}
 		if (sum == ii)
 		{
-			sum_total += sum;
+			total += sum;
 		}
 	}
-	return sum_total;
+	return total;
 }
 
 void P030_DigitNthPowers::main()

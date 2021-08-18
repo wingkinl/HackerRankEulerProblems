@@ -209,6 +209,10 @@ namespace hackerrank_euler
 		}
 		return true;
 	}
+
+	constexpr uint32_t Factorial(uint32_t n) {
+		return n == 0 ? 1 : n * Factorial(n - 1);
+	}
 }
 
 #endif // LIBS_NUMERIC_H_

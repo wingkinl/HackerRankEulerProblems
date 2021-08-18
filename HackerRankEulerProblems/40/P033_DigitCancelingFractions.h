@@ -2,7 +2,7 @@
 #define HACKERRANK_EULER_033_H_
 
 #include <unordered_set>
-#include <algorithm>
+#include <utility>
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler033/problem
 

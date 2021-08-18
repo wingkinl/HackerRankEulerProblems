@@ -1,6 +1,7 @@
 #include "P033_DigitCancelingFractions.h"
 #include <iostream>
 #include "libs/numeric.h"
+#include <algorithm>
 
 using namespace hackerrank_euler;
 

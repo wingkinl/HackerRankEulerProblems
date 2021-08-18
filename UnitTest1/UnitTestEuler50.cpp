@@ -33,6 +33,7 @@
 #include "../HackerRankEulerProblems/40/P031_CoinSums.h"
 #include "../HackerRankEulerProblems/40/P032_PandigitalProducts.h"
 #include "../HackerRankEulerProblems/40/P033_DigitCancelingFractions.h"
+#include "../HackerRankEulerProblems/40/P034_DigitFactorials.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -465,6 +466,15 @@ namespace UnitTestEuler
 			auto res = P033_DigitCancelingFractions(4, 3).GetResult();
 			Assert::AreEqual(255983LL, res.first);
 			Assert::AreEqual(467405LL, res.second);
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler034)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(19ULL, P034_DigitFactorials::Solve(20));
 		}
 	};
 }
