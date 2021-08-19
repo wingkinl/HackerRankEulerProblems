@@ -188,6 +188,7 @@
     <ClCompile Include="40\P039_IntegerRightTriangles.cpp" />
     <ClCompile Include="40\P040_ChampernowneConstant.cpp" />
     <ClCompile Include="60\P041_PandigitalPrime.cpp" />
+    <ClCompile Include="60\P042_CodedTriangleNumbers.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -234,6 +235,7 @@
     <ClInclude Include="40\P039_IntegerRightTriangles.h" />
     <ClInclude Include="40\P040_ChampernowneConstant.h" />
     <ClInclude Include="60\P041_PandigitalPrime.h" />
+    <ClInclude Include="60\P042_CodedTriangleNumbers.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />

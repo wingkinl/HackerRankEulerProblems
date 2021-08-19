@@ -41,6 +41,7 @@
 #include "../HackerRankEulerProblems/40/P039_IntegerRightTriangles.h"
 #include "../HackerRankEulerProblems/40/P040_ChampernowneConstant.h"
 #include "../HackerRankEulerProblems/60/P041_PandigitalPrime.h"
+#include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -552,6 +553,17 @@ namespace UnitTestEuler
 			P041_PandigitalPrime p(10000);
 			Assert::AreEqual(-1, p.Solve(100));
 			Assert::AreEqual(4231, p.Solve(10000));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler042)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(-1LL, P042_CodedTriangleNumbers::Solve(2LL));
+			Assert::AreEqual(2LL, P042_CodedTriangleNumbers::Solve(3LL));
+			Assert::AreEqual(10LL, P042_CodedTriangleNumbers::Solve(55LL));
 		}
 	};
 }
