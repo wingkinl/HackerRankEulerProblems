@@ -42,6 +42,7 @@
 #include "../HackerRankEulerProblems/40/P040_ChampernowneConstant.h"
 #include "../HackerRankEulerProblems/60/P041_PandigitalPrime.h"
 #include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
+#include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -564,6 +565,15 @@ namespace UnitTestEuler
 			Assert::AreEqual(-1LL, P042_CodedTriangleNumbers::Solve(2LL));
 			Assert::AreEqual(2LL, P042_CodedTriangleNumbers::Solve(3LL));
 			Assert::AreEqual(10LL, P042_CodedTriangleNumbers::Solve(55LL));
+		}
+	};
+	
+	TEST_CLASS(UnitTestEuler043)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(22212ULL, P043_SubStringDivisibility::Solve(3U));
 		}
 	};
 }
