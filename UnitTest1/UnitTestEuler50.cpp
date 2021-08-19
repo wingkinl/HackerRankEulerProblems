@@ -40,6 +40,7 @@
 #include "../HackerRankEulerProblems/40/P038_PandigitalMultiples.h"
 #include "../HackerRankEulerProblems/40/P039_IntegerRightTriangles.h"
 #include "../HackerRankEulerProblems/40/P040_ChampernowneConstant.h"
+#include "../HackerRankEulerProblems/60/P041_PandigitalPrime.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -540,6 +541,17 @@ namespace UnitTestEuler
 		{
 			P040_ChampernowneConstant p;
 			Assert::AreEqual(5040U, p.Solve({1,2,3,4,5,6,7}));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler041)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			P041_PandigitalPrime p(10000);
+			Assert::AreEqual(-1, p.Solve(100));
+			Assert::AreEqual(4231, p.Solve(10000));
 		}
 	};
 }

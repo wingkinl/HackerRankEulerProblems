@@ -171,6 +171,9 @@
     <ClCompile Include="40\P040_ChampernowneConstant.cpp">
       <Filter>Source Files\40</Filter>
     </ClCompile>
+    <ClCompile Include="60\P041_PandigitalPrime.cpp">
+      <Filter>Source Files\60</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -307,6 +310,9 @@
     </ClInclude>
     <ClInclude Include="40\P040_ChampernowneConstant.h">
       <Filter>Header Files\40</Filter>
+    </ClInclude>
+    <ClInclude Include="60\P041_PandigitalPrime.h">
+      <Filter>Header Files\60</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
