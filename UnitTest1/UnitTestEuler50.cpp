@@ -44,6 +44,7 @@
 #include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
 #include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
 #include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
+#include "../HackerRankEulerProblems/60/P047_DistinctPrimesFactors.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -585,6 +586,21 @@ namespace UnitTestEuler
 		{
 			Assert::AreEqual(1U, P046_GoldbachOtherConjecture::Solve(9U));
 			Assert::AreEqual(2U, P046_GoldbachOtherConjecture::Solve(15U));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler047)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			auto res1 = P047_DistinctPrimesFactors::Solve(20, 2);
+			auto res2 = P047_DistinctPrimesFactors::Solve(644, 3);
+			Assert::AreEqual(2ULL, res1.size());
+			Assert::AreEqual(14U, res1[0]);
+			Assert::AreEqual(20U, res1[1]);
+			Assert::AreEqual(1ULL, res2.size());
+			Assert::AreEqual(644U, res2[0]);
 		}
 	};
 }

@@ -1,7 +1,7 @@
 #ifndef HACKERRANK_EULER_046_H_
 #define HACKERRANK_EULER_046_H_
 
-// https://www.hackerrank.com/contests/projecteuler/challenges/euler044/problem
+// https://www.hackerrank.com/contests/projecteuler/challenges/euler046/problem
 
 struct P046_GoldbachOtherConjecture
 {
