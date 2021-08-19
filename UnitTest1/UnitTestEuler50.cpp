@@ -43,6 +43,7 @@
 #include "../HackerRankEulerProblems/60/P041_PandigitalPrime.h"
 #include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
 #include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
+#include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -574,6 +575,16 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(22212ULL, P043_SubStringDivisibility::Solve(3U));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler046)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			Assert::AreEqual(1U, P046_GoldbachOtherConjecture::Solve(9U));
+			Assert::AreEqual(2U, P046_GoldbachOtherConjecture::Solve(15U));
 		}
 	};
 }

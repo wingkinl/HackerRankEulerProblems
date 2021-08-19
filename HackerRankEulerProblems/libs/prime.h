@@ -20,6 +20,7 @@ namespace hackerrank_euler
 		return true;
 	}
 
+	// https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 	template <typename T>
 	struct PrimeNumbers
 	{
