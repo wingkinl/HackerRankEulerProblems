@@ -1,9 +1,6 @@
 #include "P024_LexicographicPermutations.h"
 #include <iostream>
-
-#ifndef _countof
-	#define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
-#endif // _countof
+#include "libs/numeric.h"
 
 std::string P024_LexicographicPermutations::Solve(uint64_t n)
 {

@@ -6,6 +6,10 @@
 #include <numeric>
 #endif
 
+#ifndef _countof
+    #define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
+#endif // _countof
+
 namespace hackerrank_euler
 {
 #if __cplusplus >= 201703L	// C++17

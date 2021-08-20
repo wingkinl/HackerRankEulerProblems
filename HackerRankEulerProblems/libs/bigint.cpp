@@ -1,4 +1,5 @@
 #include "bigint.h"
+#include "numeric.h"
 
 using namespace hackerrank_euler;
 
@@ -105,10 +106,6 @@ BigInt& BigInt::Multiply(const BigInt& rhs)
 	m_vals.swap(res.m_vals);
 	return *this;
 }
-
-#ifndef _countof
-	#define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
-#endif
 
 size_t BigInt::GetDigits() const
 {

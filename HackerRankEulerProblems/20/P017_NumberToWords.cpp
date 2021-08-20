@@ -1,15 +1,12 @@
 #include "P017_NumberToWords.h"
 #include <iostream>
 #include <sstream>
+#include "libs/numeric.h"
 
 const static char* kNumWords20[] = {"Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine",
     "Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen"};
 const static char* kNumWords10X[] = {"Twenty","Thirty","Forty","Fifty","Sixty","Seventy","Eighty","Ninety"};
 const static char* kNumWords1000X[] = {"","Thousand","Million","Billion","Trillion"};
-
-#ifndef _countof
-    #define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
-#endif // _countof
 
 std::string P017_NumberToWords::Solve(uint64_t n)
 {

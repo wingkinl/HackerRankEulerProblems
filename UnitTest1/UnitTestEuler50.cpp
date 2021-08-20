@@ -45,6 +45,7 @@
 #include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
 #include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
 #include "../HackerRankEulerProblems/60/P047_DistinctPrimesFactors.h"
+#include "../HackerRankEulerProblems/60/P049_PrimePermutations.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -61,6 +62,16 @@ namespace Microsoft
 				std::wstringstream ss;
 				ss << q.first << ", " << q.second;
 				return ss.str();
+			}
+
+			template <>
+			std::wstring ToString<std::vector<std::wstring>>(const std::vector<std::wstring>& vs)
+			{
+				std::wstring res;
+				res.reserve(vs.size() * 4);
+				for (auto& str : vs)
+					res += str;
+				return res;
 			}
 		}
 	}
@@ -601,6 +612,77 @@ namespace UnitTestEuler
 			Assert::AreEqual(20U, res1[1]);
 			Assert::AreEqual(1ULL, res2.size());
 			Assert::AreEqual(644U, res2[0]);
+		}
+	};
+
+
+	TEST_CLASS(UnitTestEuler049)
+	{
+	public:
+		TEST_METHOD(Test_2000_3)
+		{
+			Assert::AreEqual(std::vector<std::wstring>{L"148748178147"},
+				ToStrings(P049_PrimePermutations::Solve(2000, 3)));
+		}
+
+		TEST_METHOD(Test_1000000_3)
+		{
+			auto results = P049_PrimePermutations::Solve(1000000, 3);
+			Assert::AreEqual(883ULL, results.size());
+			results.resize(14);
+			Assert::AreEqual(std::vector<std::wstring>{
+					L"148748178147",
+					L"296962999629",
+					L"114831481318143",
+					L"114974171971941",
+					L"127131321713721",
+					L"127391723921739",
+					L"127571725721757",
+					L"127991729921799",
+					L"148214812181421",
+					L"148313148148131",
+					L"148974718979481",
+					L"185035180385103",
+					L"185935189385193",
+					L"195433549151439"
+				},
+				ToStrings(results));
+		}
+
+		TEST_METHOD(Test_1000000_4)
+		{
+			Assert::AreEqual(std::vector<std::wstring>{
+					L"83987889379388798837",
+					L"121367126317131267136217",
+					L"182593185923189253192583",
+					L"209359259309309259359209",
+					L"302171307121312071317021",
+					L"324397329347334297339247",
+					L"372877377827382777387727",
+					L"403181408131413081418031",
+					L"516679566179615679665179",
+					L"536801586301635801685301",
+					L"536867586367635867685367",
+					L"541859545189548519551849",
+					L"613763663713713663763613",
+					L"617983739861861739983617",
+					L"707857757807807757857707"
+				},
+				ToStrings(P049_PrimePermutations::Solve(1000000, 4)));
+		}
+
+		std::vector<std::wstring> ToStrings(const P049_PrimePermutations::Results& results)
+		{
+			std::vector<std::wstring> vs(results.size());
+			for (size_t ii = 0; ii < results.size(); ++ii)
+			{
+				auto& res = results[ii];
+				std::wostringstream ss;
+				for (auto v : res)
+					ss << v;
+				vs[ii] = ss.str();
+			}
+			return vs;
 		}
 	};
 }

@@ -1,9 +1,6 @@
 #include "P031_CoinSums.h"
 #include <iostream>
-
-#ifndef _countof
-    #define _countof(_Array) (sizeof(_Array) / sizeof(_Array[0]))
-#endif // _countof
+#include "libs/numeric.h"
 
 static const int32_t kCoins[] = { 1, 2, 5, 10, 20, 50, 100, 200 };
 
