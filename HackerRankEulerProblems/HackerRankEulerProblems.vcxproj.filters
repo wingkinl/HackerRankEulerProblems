@@ -189,6 +189,9 @@
     <ClCompile Include="60\P049_PrimePermutations.cpp">
       <Filter>Source Files\60</Filter>
     </ClCompile>
+    <ClCompile Include="60\P050_ConsecutivePrimeSum.cpp">
+      <Filter>Source Files\60</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -342,6 +345,9 @@
       <Filter>Header Files\60</Filter>
     </ClInclude>
     <ClInclude Include="60\P049_PrimePermutations.h">
+      <Filter>Header Files\60</Filter>
+    </ClInclude>
+    <ClInclude Include="60\P050_ConsecutivePrimeSum.h">
       <Filter>Header Files\60</Filter>
     </ClInclude>
   </ItemGroup>

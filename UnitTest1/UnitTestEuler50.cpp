@@ -46,6 +46,7 @@
 #include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
 #include "../HackerRankEulerProblems/60/P047_DistinctPrimesFactors.h"
 #include "../HackerRankEulerProblems/60/P049_PrimePermutations.h"
+#include "../HackerRankEulerProblems/60/P050_ConsecutivePrimeSum.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -683,6 +684,34 @@ namespace UnitTestEuler
 				vs[ii] = ss.str();
 			}
 			return vs;
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler050)
+	{
+	public:
+		TEST_METHOD(Test_100)
+		{
+			P050_ConsecutivePrimeSum p(6000000ULL);
+			auto res1 = p.Solve(100ULL);
+			Assert::AreEqual(41ULL, res1.min_prime_with_max_len);
+			Assert::AreEqual(6U, res1.max_consecutive_len);
+		}
+
+		TEST_METHOD(Test_10000)
+		{
+			P050_ConsecutivePrimeSum p(1000ULL);
+			auto res2 = p.Solve(1000ULL);
+			Assert::AreEqual(953ULL, res2.min_prime_with_max_len);
+			Assert::AreEqual(21U, res2.max_consecutive_len);
+		}
+
+		TEST_METHOD(Test_1000000000000)
+		{
+			P050_ConsecutivePrimeSum p(1000000000000ULL);
+			auto res1 = p.Solve(1000000000000ULL);
+			Assert::AreEqual(999973156643ULL, res1.min_prime_with_max_len);
+			Assert::AreEqual(379317U, res1.max_consecutive_len);
 		}
 	};
 }

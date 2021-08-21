@@ -193,6 +193,7 @@
     <ClCompile Include="60\P046_GoldbachOtherConjecture.cpp" />
     <ClCompile Include="60\P047_DistinctPrimesFactors.cpp" />
     <ClCompile Include="60\P049_PrimePermutations.cpp" />
+    <ClCompile Include="60\P050_ConsecutivePrimeSum.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
@@ -244,6 +245,7 @@
     <ClInclude Include="60\P046_GoldbachOtherConjecture.h" />
     <ClInclude Include="60\P047_DistinctPrimesFactors.h" />
     <ClInclude Include="60\P049_PrimePermutations.h" />
+    <ClInclude Include="60\P050_ConsecutivePrimeSum.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />
