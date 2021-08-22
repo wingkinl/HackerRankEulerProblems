@@ -195,6 +195,7 @@
     <ClCompile Include="60\P049_PrimePermutations.cpp" />
     <ClCompile Include="60\P050_ConsecutivePrimeSum.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
+    <ClCompile Include="80\P076_CountingSummations.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
   </ItemGroup>

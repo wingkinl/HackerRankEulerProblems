@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "../HackerRankEulerProblems/80/P068_MagicNGonRing.h"
+#include "../HackerRankEulerProblems/80/P076_CountingSummations.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -51,6 +52,16 @@ namespace UnitTestEuler
 			P068MagicNGonRing problem;
 			problem.Solve(10, 32);
 			Logger::WriteMessage((std::string("ring count: ") + std::to_string(problem.results.size())).c_str());
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler076)
+	{
+	public:
+		TEST_METHOD(Test_3_9)
+		{
+			Assert::AreEqual(6U, P076_CountingSummations::Solve(5U));
+			Assert::AreEqual(10U, P076_CountingSummations::Solve(6U));
 		}
 	};
 }

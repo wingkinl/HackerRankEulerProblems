@@ -6,7 +6,7 @@
 
 P050_ConsecutivePrimeSum::P050_ConsecutivePrimeSum(uint64_t prime_upper_bound)
 {
-	// In fact, all the results starts at small primes, so we
+	// In fact, all the results start at small primes, so we
 	// don't really need that many primes
 	if (prime_upper_bound > 6000000ULL)
 		prime_upper_bound = 6000000ULL;
