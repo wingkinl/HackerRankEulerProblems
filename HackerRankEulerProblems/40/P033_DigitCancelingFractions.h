@@ -6,6 +6,8 @@
 
 // https://www.hackerrank.com/contests/projecteuler/challenges/euler033/problem
 
+struct FractionContext;
+
 struct P033_DigitCancelingFractions
 {
 	P033_DigitCancelingFractions(int32_t digits, int32_t cancel);
@@ -18,36 +20,12 @@ private:
 	const int32_t kCancel;
 	const int32_t kKeep;
 
-	int64_t numeratorSum = 0;
-	int64_t denominatorSum = 0;
-
-	typedef int32_t    DigitT;
-	typedef int16_t    PosT;
-
-	struct Number
-	{
-		int32_t digits_count = 0;
-		DigitT	digits[4] = { 0 };
-
-		void Increase();
-	};
-
-	struct CombinedNumber
-	{
-		CombinedNumber(int32_t digits, int32_t cancel);
-
-		inline bool Next();
-
-		int32_t Combine(const Number& num2, const DigitT(&cancel_digits)[3]);
-
-		int32_t digits_count = 0;
-		int32_t cancel = 0;
-		DigitT	digits[4] = { 0 };
-		// zeros are digits to be kept, non-zeros are to be canceled
-		PosT	digit_pos[4] = { 0 };
-	};
+	int64_t numerator_sum = 0;
+	int64_t denominator_sum = 0;
 
 	std::unordered_set<int32_t> match_numbers;
+private:
+	void CheckCancelDigits(FractionContext& ctxt);
 };
 
 #endif // HACKERRANK_EULER_033_H_
