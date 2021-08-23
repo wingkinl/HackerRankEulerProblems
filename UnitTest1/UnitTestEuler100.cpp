@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 #include "../HackerRankEulerProblems/80/P068_MagicNGonRing.h"
 #include "../HackerRankEulerProblems/80/P076_CountingSummations.h"
+#include "../HackerRankEulerProblems/80/P078_CoinPartitions.h"
 
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -76,6 +77,25 @@ namespace UnitTestEuler
 		TEST_METHOD(Test_1000)
 		{
 			Assert::AreEqual(709496665U, P076_CountingSummations::Solve(1000U));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler078)
+	{
+	public:
+		TEST_METHOD(Test_5)
+		{
+			Assert::AreEqual(7U, P078_CoinPartitions::Solve(5U));
+		}
+
+		TEST_METHOD(Test_6)
+		{
+			Assert::AreEqual(11U, P078_CoinPartitions::Solve(6U));
+		}
+
+		TEST_METHOD(Test_60000)
+		{
+			Assert::AreEqual(168497963U, P078_CoinPartitions::Solve(60000U));
 		}
 	};
 }

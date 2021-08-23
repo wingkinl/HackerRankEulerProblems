@@ -1,15 +1,16 @@
-#include "P076_CountingSummations.h"
+#include "P078_CoinPartitions.h"
 #include <algorithm>
 #include <iostream>
+#include <vector>
 
 enum {
 	kMaxNum		= 1000,
 	kResultMod	= 1000000007,
 };
 
-unsigned int P076_CountingSummations::Solve(unsigned int n)
+unsigned int P078_CoinPartitions::Solve(unsigned int n)
 {
-	unsigned int ways[kMaxNum+1] = {0};
+	std::vector<unsigned int> ways(n+1);
 	ways[0] = 1;
 	for (unsigned int ii = 1; ii < n; ++ii)
 	{
@@ -18,10 +19,10 @@ unsigned int P076_CountingSummations::Solve(unsigned int n)
 			ways[jj] = (ways[jj] + ways[jj - ii]) % kResultMod;
 		}
 	}
-	return ways[n] % kResultMod;
+	return (ways[n] + 1) % kResultMod;
 }
 
-void P076_CountingSummations::main()
+void P078_CoinPartitions::main()
 {
 	std::ios_base::sync_with_stdio(false);
 

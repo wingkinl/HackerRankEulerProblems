@@ -196,6 +196,7 @@
     <ClCompile Include="60\P050_ConsecutivePrimeSum.cpp" />
     <ClCompile Include="80\P068_MagicNGonRing.cpp" />
     <ClCompile Include="80\P076_CountingSummations.cpp" />
+    <ClCompile Include="80\P078_CoinPartitions.cpp" />
     <ClCompile Include="HackerRankEulerProblems.cpp" />
     <ClCompile Include="libs\bigint.cpp" />
   </ItemGroup>
@@ -248,6 +249,8 @@
     <ClInclude Include="60\P049_PrimePermutations.h" />
     <ClInclude Include="60\P050_ConsecutivePrimeSum.h" />
     <ClInclude Include="80\P068_MagicNGonRing.h" />
+    <ClInclude Include="80\P076_CountingSummations.h" />
+    <ClInclude Include="80\P078_CoinPartitions.h" />
     <ClInclude Include="libs\bigint.h" />
     <ClInclude Include="libs\numeric.h" />
     <ClInclude Include="libs\prime.h" />
