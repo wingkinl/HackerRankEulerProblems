@@ -58,10 +58,24 @@ namespace UnitTestEuler
 	TEST_CLASS(UnitTestEuler076)
 	{
 	public:
-		TEST_METHOD(Test_3_9)
+		TEST_METHOD(Test_5)
 		{
 			Assert::AreEqual(6U, P076_CountingSummations::Solve(5U));
+		}
+
+		TEST_METHOD(Test_6)
+		{
 			Assert::AreEqual(10U, P076_CountingSummations::Solve(6U));
+		}
+
+		TEST_METHOD(Test_7)
+		{
+			Assert::AreEqual(14U, P076_CountingSummations::Solve(7U));
+		}
+
+		TEST_METHOD(Test_1000)
+		{
+			Assert::AreEqual(709496665U, P076_CountingSummations::Solve(1000U));
 		}
 	};
 }

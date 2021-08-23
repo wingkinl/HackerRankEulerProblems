@@ -10,11 +10,11 @@ void P031_CoinSums::Init(int32_t max_coin)
 	number_of_ways.resize(max_coin + 1);
 	number_of_ways[0] = 1;
 
-	for (int i = 0; i < _countof(kCoins); i++)
+	for (int ii = 0; ii < _countof(kCoins); ii++)
 	{
-		for (int j = kCoins[i]; j <= max_coin; j++)
+		for (int jj = kCoins[ii]; jj <= max_coin; jj++)
 		{
-			number_of_ways[j] += number_of_ways[j - kCoins[i]] % 1000000007;
+			number_of_ways[jj] += number_of_ways[jj - kCoins[ii]] % 1000000007;
 		}
 	}
 }
