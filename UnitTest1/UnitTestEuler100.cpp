@@ -85,17 +85,20 @@ namespace UnitTestEuler
 	public:
 		TEST_METHOD(Test_5)
 		{
-			Assert::AreEqual(7U, P078_CoinPartitions::Solve(5U));
+			P078_CoinPartitions p;
+			Assert::AreEqual(7, p.Solve(5));
 		}
 
 		TEST_METHOD(Test_6)
 		{
-			Assert::AreEqual(11U, P078_CoinPartitions::Solve(6U));
+			P078_CoinPartitions p;
+			Assert::AreEqual(11, p.Solve(6));
 		}
 
 		TEST_METHOD(Test_60000)
 		{
-			Assert::AreEqual(168497963U, P078_CoinPartitions::Solve(60000U));
+			P078_CoinPartitions p(60000);
+			Assert::AreEqual(168497963, p.Solve(60000));
 		}
 	};
 }
