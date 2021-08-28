@@ -43,6 +43,7 @@
 #include "../HackerRankEulerProblems/60/P041_PandigitalPrime.h"
 #include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
 #include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
+#include "../HackerRankEulerProblems/60/P044_PentagonNumbers.h"
 #include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
 #include "../HackerRankEulerProblems/60/P047_DistinctPrimesFactors.h"
 #include "../HackerRankEulerProblems/60/P049_PrimePermutations.h"
@@ -588,6 +589,24 @@ namespace UnitTestEuler
 		TEST_METHOD(Test)
 		{
 			Assert::AreEqual(22212ULL, P043_SubStringDivisibility::Solve(3U));
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler044)
+	{
+	public:
+		TEST_METHOD(Test)
+		{
+			auto res = P044_PentagonNumbers::Solve(10, 2);
+			Assert::AreEqual(1ULL, res.size());
+			Assert::AreEqual(70ULL, res[0]);
+		}
+
+		TEST_METHOD(Test_Large)
+		{
+			auto res = P044_PentagonNumbers::Solve(1000000, 2);
+			Assert::AreEqual(336ULL, res.size());
+			Assert::AreEqual(1490525508435ULL, res.back());
 		}
 	};
 

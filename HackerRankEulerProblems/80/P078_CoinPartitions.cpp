@@ -28,7 +28,7 @@ int P078_CoinPartitions::SolveSlow(int n)
 	return (ways[n] + 1) % kResultMod;
 }
 
-// https://en.wikipedia.org/wiki/Partition_%28number_theory%29#Recurrence_formula
+// https://en.wikipedia.org/wiki/Partition_(number_theory)#Partition_function
 int P078_CoinPartitions::Solve(int n)
 {
 	if (n < partitions_.size())
