@@ -201,6 +201,9 @@
     <ClCompile Include="60\P044_PentagonNumbers.cpp">
       <Filter>Source Files\60</Filter>
     </ClCompile>
+    <ClCompile Include="60\P045_TriangularPentagonalHexagonal.cpp">
+      <Filter>Source Files\60</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="20\P001_MultiplesOf3And5.h">
@@ -366,6 +369,9 @@
       <Filter>Header Files\80</Filter>
     </ClInclude>
     <ClInclude Include="60\P044_PentagonNumbers.h">
+      <Filter>Header Files\60</Filter>
+    </ClInclude>
+    <ClInclude Include="60\P045_TriangularPentagonalHexagonal.h">
       <Filter>Header Files\60</Filter>
     </ClInclude>
   </ItemGroup>

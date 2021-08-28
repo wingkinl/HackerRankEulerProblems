@@ -217,6 +217,34 @@ namespace hackerrank_euler
 	constexpr uint32_t Factorial(uint32_t n) {
 		return n == 0 ? 1 : n * Factorial(n - 1);
 	}
+
+	// https://en.wikipedia.org/wiki/Triangular_number#Triangular_roots_and_tests_for_triangular_numbers
+	static inline bool IsTriangle(uint64_t x)
+	{
+		auto n = (uint64_t)((sqrt((double)8 * x + 1) - 1) / 2);
+		auto tn = n * (n + 1) / 2;
+		if (x == tn)
+			return true;
+		return false;
+	}
+
+	// https://en.wikipedia.org/wiki/Pentagonal_number#Tests_for_pentagonal_numbers
+	static inline bool IsPentagonal(uint64_t x)
+	{
+		auto n = (uint64_t)((sqrt((double)x * 24 + 1) + 1) / 6);
+		auto p = n * (3 * n - 1) / 2;
+		return p == x;
+	}
+
+	// https://en.wikipedia.org/wiki/Hexagonal_number#Test_for_hexagonal_numbers
+	static inline bool IsHexagonal(uint64_t x)
+	{
+		auto n = (uint64_t)((sqrt((double)8 * x + 1) + 1) / 4);
+		auto hn = n * (2 * n - 1);
+		if (x == hn)
+			return true;
+		return false;
+	}
 }
 
 #endif // LIBS_NUMERIC_H_

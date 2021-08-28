@@ -44,6 +44,7 @@
 #include "../HackerRankEulerProblems/60/P042_CodedTriangleNumbers.h"
 #include "../HackerRankEulerProblems/60/P043_SubStringDivisibility.h"
 #include "../HackerRankEulerProblems/60/P044_PentagonNumbers.h"
+#include "../HackerRankEulerProblems/60/P045_TriangularPentagonalHexagonal.h"
 #include "../HackerRankEulerProblems/60/P046_GoldbachOtherConjecture.h"
 #include "../HackerRankEulerProblems/60/P047_DistinctPrimesFactors.h"
 #include "../HackerRankEulerProblems/60/P049_PrimePermutations.h"
@@ -63,6 +64,15 @@ namespace Microsoft
 			{
 				std::wstringstream ss;
 				ss << q.first << ", " << q.second;
+				return ss.str();
+			}
+
+			template <>
+			static std::wstring ToString<std::vector<uint64_t>>(const std::vector<uint64_t>& v)
+			{
+				std::wstringstream ss;
+				for (auto n : v)
+					ss << n;
 				return ss.str();
 			}
 
@@ -607,6 +617,27 @@ namespace UnitTestEuler
 			auto res = P044_PentagonNumbers::Solve(1000000, 2);
 			Assert::AreEqual(336ULL, res.size());
 			Assert::AreEqual(1490525508435ULL, res.back());
+		}
+	};
+
+	TEST_CLASS(UnitTestEuler045)
+	{
+	public:
+		TEST_METHOD(Test_3_5)
+		{
+			auto res = P045_TriangularPentagonalHexagonal::Solve(200000000000000ULL, 3U, 5U);
+			Assert::AreEqual(
+				{1ULL,210ULL,40755ULL,7906276ULL,
+				1533776805ULL,297544793910ULL,57722156241751ULL}, 
+				res);
+		}
+
+		TEST_METHOD(Test_5_6)
+		{
+			auto res = P045_TriangularPentagonalHexagonal::Solve(200000000000000ULL, 5U, 6U);
+			Assert::AreEqual(
+				{ 1ULL,40755ULL,1533776805ULL,57722156241751ULL},
+				res);
 		}
 	};
 

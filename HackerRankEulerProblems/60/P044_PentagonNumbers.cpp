@@ -1,13 +1,8 @@
 #include "P044_PentagonNumbers.h"
 #include <iostream>
+#include "libs/numeric.h"
 
-// https://en.wikipedia.org/wiki/Pentagonal_number#Tests_for_pentagonal_numbers
-static inline bool IsPentagonal(uint64_t x)
-{
-	auto n = (uint64_t)((sqrt(x * 24 + 1) + 1) / 6);
-	auto p = n * (3 * n - 1) / 2;
-	return p == x;
-}
+using namespace hackerrank_euler;
 
 auto P044_PentagonNumbers::Solve(uint32_t max, uint32_t offset) -> Results
 {
